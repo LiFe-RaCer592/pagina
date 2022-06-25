@@ -67,8 +67,11 @@ header{
     position: absolute;
     background: -webkit-linear-gradient(right, #ff6300, #ff8f00);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Grand Wilson Sans DEMO';
+    width: 100%;
+    top: 43.5%;
    
     
 }
@@ -77,6 +80,7 @@ header{
       transform: translate(1.5px, 1.5px);
       background: #555;
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
@@ -84,19 +88,35 @@ header{
 
 .r_gradient-subtitle{
     background-image: linear-gradient(to right, #ff6300, #ff8f00);
-    
     font-family: 'Grand Wilson Sans DEMO';
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .r_gradient-subtitle h3{
-    color: #ffffff00;
+    color: #01172d;
+    font-size: 24px;
+    align-self: center;
 }
 
 .col-md-6 p{
     color: #fff;
     font-family: 'arial';
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
 }
 .r_mt{
-    margin-top: 250px;
+    margin-top: 150px;
+}
+.section-2{
+    background-image: url(./Media/Compressed\ Media/Detalle\ fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.media-body{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Arial';
 }
