@@ -6,29 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="container-fluid align-items-center p-3">
+    <header class="container-fluid align-items-center pt-3">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand logo" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <i class="fa-solid fa-bars navbar-toggler-icon"></i>
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav m-auto">
-                <li class="nav-item active">
+                <li class="nav-item align-self-center">
                   <a class="nav-link" href="#">LA<br>
                     PLATAFORMA <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item align-self-center">
                   <a class="nav-link" href="#">MARKETPLACE</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item align-self-center">
                   <a class="nav-link" href="#">MAINDAO</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item align-self-center">
                   <a class="nav-link" href="#">BLOG</a>
                 </li>
               </ul>
@@ -42,7 +43,7 @@
                 <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="52" viewBox="0 0 66 52">
                     <image id="Icono_menu" data-name="Icono menu" width="66" height="52" xlink:href="data:img/png;base64,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"/>
                 </svg> 
-                <div class="conectar mx-2">
+                <div class="conectar align-items-center mx-2">
                     <div class="conectar-btn">
                         <a href="#">CONECTAR</a>
                     </div>
@@ -81,7 +82,33 @@
             </div>
         </div> -->
     </header>
-
+    <main>
+        <div class="container-fluid section-1">
+            <div class="container-lg r_gradient ">
+                <h1 class="r_gradient-heading-outline r_gradient-text text-center">nft landsmain</h1>
+                <h1 class="r_gradient-text text-center">nft landsmain</h1>
+            </div>
+            <div class="col-md-3 r_gradient-subtitle justify-content-between text-center mt-5">
+                <h3>
+                    tipos de nfts landsmain
+                </h3>
+            </div>
+            <div class="col-lg r_mt d-flex">
+                <div class="col-md-6">
+                    <p>
+                        La clasificación de los bienes raíces NFT LandsMain derivarán en sus atributos únicos de construcción, ubicación y dimensiones, contando con seis (6) rarezas distintas. Usted elegirá la que mejor se adapte a su modelo de negocio. Adicionalmente al poseerlo les concede privilegios y acceso a eventos especiales en “The Mainland”. 
+                        ¿Por qué es útil saber la rareza? La rareza en los NFT LandsMain no es algo realmente determinante como están acostumbrados de ver en la gran mayoría de las colecciones NFT, donde en sus diseños solo cambia una mínima característica visual en particular del mismo NFT repetido (como nariz, boca, objeto, color o posición). 
+                        La rareza va determinada por el factor de usabilidad y del poder de utilidad que otorga al poseerlo, aunque tienen  aspectos muy importantes y deseables, como su ubicación y tamaño. Cada uno cuenta con un poder de construcción que lo hace único en sí mismo, ya que todo dependerá de lo que usted quiera desarrollar de su idea o proyecto, sumando un valor creativo, de uso y económico que le agregara una rareza irrepetible, por lo que al construir algo sobre su LandsMain, su NFT pasara a ser algo totalmente único. A continuación, los tipos de NFTs que tendremos:
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        La rareza va determinada por el factor de usabilidad y del poder de utilidad que otorga al poseerlo, aunque tienen  aspectos muy importantes y deseables, como su ubicación y tamaño. Cada uno cuenta con un poder de construcción que lo hace único en sí mismo, ya que todo dependerá de lo que usted quiera desarrollar de su idea o proyecto, sumando un valor creativo, de uso y económico que le agregara una rareza irrepetible, por lo que al construir algo sobre su LandsMain, su NFT pasara a ser algo totalmente único. A continuación, los tipos de NFTs que tendremos:
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
