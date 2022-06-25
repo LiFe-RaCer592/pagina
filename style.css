@@ -31,13 +31,7 @@ header{
 .conectar-btn a{
     color: #01162c;
 }
-/* .nav-menu ul li a{
-    color: #9a999e;
-    text-decoration: none;
-}
-.nav-menu ul li{
-    list-style: none;
-} */
+
 .navbar-nav li a{
     color: #9a999e;
 }
@@ -50,18 +44,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    padding: 425px 0 100px 0;
-    margin-top: -80px;
+    padding: 100px 0;
+    margin-top: -90px;
     position: relative;
 
 }
-/* .section-1 h1{
-    position: absolute;
-    background: -webkit-linear-gradient(right, #ff6300, #ff8f00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Grand Wilson Sans DEMO';
-} */
 
 .r_gradient-text {
     position: absolute;
@@ -71,18 +58,16 @@ header{
     -webkit-text-fill-color: transparent;
     font-family: 'Grand Wilson Sans DEMO';
     width: 100%;
-    top: 43.5%;
-   
-    
+    top: 41.5%;
 }
     
-    .r_gradient-heading-outline {
-      transform: translate(1.5px, 1.5px);
-      background: #555;
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+.r_gradient-heading-outline {
+  transform: translate(1.5px, 1.5px);
+  background: #555;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
 
@@ -90,7 +75,7 @@ header{
     background-image: linear-gradient(to right, #ff6300, #ff8f00);
     font-family: 'Grand Wilson Sans DEMO';
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -99,7 +84,12 @@ header{
     font-size: 24px;
     align-self: center;
 }
-
+.r_row-1{
+    margin-top: 250px;
+}
+.r_row-2{
+    width: 100%;
+}
 .col-md-6 p{
     color: #fff;
     font-family: 'arial';
@@ -107,7 +97,7 @@ header{
     font-weight: bold;
 }
 .r_mt{
-    margin-top: 150px;
+    margin-top: 280px;
 }
 .section-2{
     background-image: url(./Media/Compressed\ Media/Detalle\ fondo.webp);
@@ -117,6 +107,9 @@ header{
 }
 .media-body{
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Arial';
+}
+.r_img-75{
+    width: 95%;
 }
