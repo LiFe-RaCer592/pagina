@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+header{
+    background-image: linear-gradient(#072749, #01162c);
+    width: 100%;
+    font-family: 'enixe';
+    font-size: 18px;
+    font-weight: 700;
+    color: #9a999e;
+}
+.logo img{
+    width: 200px;
+}
+.conectar-btn{
+    padding: 05px 25px;
+    background-image: linear-gradient(to right, #cdcdcd, #e5e5e5, #cdcdcd);
+    border-radius: 28px;
+    border: 8px solid #8c8c8c;
+    color: #9a999e;
+}
+.conectar-btn a{
+    color: #01162c;
+}
+.nav-menu ul li a{
+    color: #9a999e;
+    text-decoration: none;
+}
+.nav-menu ul li{
+    list-style: none;
+}
