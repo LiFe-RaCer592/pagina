@@ -99,11 +99,12 @@ header{
 .r_mt{
     margin-top: 280px;
 }
-.section-2{
+.section-2, .section-3{
     background-image: url(./Media/Compressed\ Media/Detalle\ fondo.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 100px 0;
 }
 .media-body{
     color: #fff;
@@ -111,5 +112,6 @@ header{
     font-family: 'Arial';
 }
 .r_img-75{
-    width: 95%;
+    width: 100%;
+    margin-top: 20px;
 }
