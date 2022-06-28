@@ -178,3 +178,7 @@ header{
     background-repeat: no-repeat;
     background-size: 600px;
 }
+.r_label-text{
+    color: #fff;
+    font-size: 18px ;
+}
