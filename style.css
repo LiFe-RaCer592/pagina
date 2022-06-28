@@ -91,7 +91,7 @@ header{
 .r_row-2{
     width: 100%;
 }
-.col-lg-6 p{
+.col-lg-6 p, .col-lg-4 p{
     color: #fff;
     font-family: 'arial';
     font-size: 14px;
@@ -198,4 +198,7 @@ header{
     font-family: 'Arial';
     font-size: 14px;
     font-weight: bold;
+}
+.font-s-12{
+    font-size: 12px!important;
 }
