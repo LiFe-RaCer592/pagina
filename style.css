@@ -135,3 +135,35 @@ header{
 .r_mt-125{
     margin-top: 125px;
 }
+
+.r_color-heading{
+    font-family: 'Grand Wilson Sans DEMO';
+    font-size: 18px;
+    margin-right: -70px!important;
+}
+.r_color-heading-s{
+    font-family: 'Grand Wilson Sans DEMO';
+    font-size: 18px;
+}
+
+.text-shadow{
+    text-shadow: 2.5px 3.5px 4px #000000;
+}
+.r_yellow{
+    color:#ffcc00;
+}
+.r_green{
+    color:#33cc33;
+}
+.r_lblue{
+    color:#4bb2fc;
+}
+.r_pink{
+    color:#ff00ff;
+}
+.r_orange{
+    color:#ff6600;
+}
+.r_red{
+    color:#ff0000;
+}
