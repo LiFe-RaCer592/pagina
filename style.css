@@ -100,7 +100,7 @@ header{
 .r_mt{
     margin-top: 280px;
 }
-.section-2, .section-3{
+.section-2, .section-3, .section-4, .section-5, .section-6{
     background-image: url(./Media/Compressed\ Media/Detalle\ fondo.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,6 +168,12 @@ header{
 .r_red{
     color:#ff0000;
 }
+.r_blue{
+    color:#4972b9;
+}
+.r_purple{
+    color:#742cb9;
+}
 .r_subheading{
     color: #fff;
     font-family: 'Grand Wilson Sans DEMO';
@@ -176,9 +182,20 @@ header{
 .section-4-bg{
     background-image: url(./Media/fondo\ nombre.png);
     background-repeat: no-repeat;
-    background-size: 600px;
+    background-size: 570px;
 }
 .r_label-text{
     color: #fff;
-    font-size: 18px ;
+    font-size: 16px ;
+}
+.section-4-img{
+    width: 85%;
+}
+.section-5-img{
+    width: 100%;
+}
+.r_colorful-p{
+    font-family: 'Arial';
+    font-size: 14px;
+    font-weight: bold;
 }
