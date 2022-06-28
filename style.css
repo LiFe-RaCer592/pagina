@@ -58,7 +58,7 @@ header{
     -webkit-text-fill-color: transparent;
     font-family: 'Grand Wilson Sans DEMO';
     width: 100%;
-    top: 41.5%;
+    /* top: 41.5%; */
 }
     
 .r_gradient-heading-outline {
@@ -74,19 +74,19 @@ header{
 .r_gradient-subtitle{
     background-image: linear-gradient(to right, #ff6300, #ff8f00);
     font-family: 'Grand Wilson Sans DEMO';
-    position: absolute;
+    /* position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 .r_gradient-subtitle h3{
     color: #01172d;
     font-size: 24px;
     align-self: center;
 }
-.r_row-1{
+/* .r_row-1{
     margin-top: 250px;
-}
+} */
 .r_row-2{
     width: 100%;
 }
@@ -117,4 +117,21 @@ header{
 }
 .r_table-img{
     width: 100%;
+}
+
+.r_to-height{
+    min-height: 270px;
+}
+.r_to-height-150{
+    min-height: 150px;
+}
+
+.r_mt-50{
+    margin-top: 50px;
+}
+.r_mt-150{
+    margin-top: 150px;
+}
+.r_mt-125{
+    margin-top: 125px;
 }
