@@ -74,6 +74,7 @@ header{
 .r_gradient-subtitle{
     background-image: linear-gradient(to right, #ff6300, #ff8f00);
     font-family: 'Grand Wilson Sans DEMO';
+    width: 75%;
     /* position: absolute;
     top: 60%;
     left: 50%;
@@ -166,4 +167,14 @@ header{
 }
 .r_red{
     color:#ff0000;
+}
+.r_subheading{
+    color: #fff;
+    font-family: 'Grand Wilson Sans DEMO';
+    font-size: 24px;
+}
+.section-4-bg{
+    background-image: url(./Media/fondo\ nombre.png);
+    background-repeat: no-repeat;
+    background-size: 600px;
 }
