@@ -863,7 +863,13 @@ body {
 .w-55 {
 	width: 55% !important;
 }
-
+.slick-dots li.slick-active button:before {
+	color: $darkOrange !important;
+}
+.slick-dots li button:before {
+	color: #fff;
+	opacity: 1;
+}
 @import 'desktop';
 @import 'tablet';
 @import 'mobile';

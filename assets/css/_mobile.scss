@@ -23,7 +23,29 @@
 		}
 	}
 	.section-2 {
-		display: none;
+		// display: none;
+		.video {
+			.sides {
+				display: none;
+			}
+			.middle {
+				width: 20rem;
+				height: 11rem;
+			}
+		}
+		.btn-youtube {
+			a {
+				margin: 5rem 0 !important;
+				text-align: center;
+				img {
+					margin: 0 auto;
+					width: 80%;
+				}
+			}
+		}
+		.w-55 {
+			width: 90% !important;
+		}
 	}
 	.section-3 {
 		padding: 50px $paddingMobile 280px;
@@ -126,6 +148,11 @@
 				font-size: 20px;
 			}
 		}
+		.slider2 {
+			.d-flex {
+				flex-wrap: wrap;
+			}
+		}
 	}
 	.section-12 {
 		.left {
@@ -177,4 +204,9 @@
 			}
 		}
 	}
+}
+.slick-slider {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
 }

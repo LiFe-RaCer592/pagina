@@ -1,4 +1,7 @@
 @media (max-width: 1024px) {
+	.slick-arrow {
+		display: none !important;
+	}
 	$tabletPadding: 30px;
 	.section-1 {
 		.text-left {
@@ -361,7 +364,4 @@
 			}
 		}
 	}
-}
-.slick-arrow {
-	display: none !important;
 }

@@ -1,5 +1,5 @@
 $(function () {
-	$('.section-5 .slide').hover(
+	$('.slide').hover(
 		function () {
 			// over
 			$(this).addClass('scale');
@@ -13,7 +13,7 @@ $(function () {
 			$(this).find('h5').addClass('d-none');
 		}
 	);
-	$('.section-5 .slider').slick({
+	$('.slider').slick({
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		prevArrow: $('.sec5prev'),
@@ -23,15 +23,19 @@ $(function () {
 			{
 				breakpoint: 780,
 				settings: {
-					slidesToShow: 3,
+					autoplay: true,
+					slidesToShow: 2,
 					slidesToScroll: 1,
+					dots: true,
 				},
 			},
 			{
 				breakpoint: 480,
 				settings: {
+					autoplay: true,
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					dots: true,
 				},
 			},
 		],
@@ -46,7 +50,8 @@ $(function () {
 				breakpoint: 780,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 1,
+					slidesToScroll: 2,
+					dots: true,
 				},
 			},
 			{
@@ -54,6 +59,7 @@ $(function () {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					dots: true,
 				},
 			},
 		],
@@ -65,12 +71,31 @@ $(function () {
 		accessibility: true,
 		prevArrow: $('.prev'),
 		nextArrow: $('.next'),
+		responsive: [
+			{
+				breakpoint: 780,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					dots: true,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: true,
+				},
+			},
+		],
 	});
 	$('.section-11 .slider2').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
 		arrows: false,
+
 		// prevArrow: $('.prev'),
 		// nextArrow: $('.next'),
 	});
