@@ -1,4 +1,8 @@
 $(function () {
+	$('.arrow').click(function (e) {
+		e.preventDefault();
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	});
 	$('.slide').hover(
 		function () {
 			// over
