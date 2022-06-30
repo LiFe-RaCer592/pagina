@@ -43,7 +43,7 @@ header{
     font-size: 26px;
 }
 .section-1{
-    background-image: url(./Media/PCs.png);
+    background-image: url(./Media/page-3/Separador.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -77,7 +77,7 @@ header{
 .r_gradient-subtitle{
     background-image: linear-gradient(to right, #ff6300, #ff8f00);
     font-family: 'Grand Wilson Sans DEMO';
-    width: 50%;
+    width: 75%;
     /* position: absolute;
     top: 60%;
     left: 50%;
@@ -335,24 +335,6 @@ header{
     color: #fff;
 }
 
-.cropped1 {
-    /* width: 600px; width of container
-    height: 350px; height of container
-    object-fit: cover; */
-    /* position: absolute;
-    clip: rect(0px,60px,200px,0px); */
-}
-/* .cropped1 {
-    width: 200px;
-    height: 150px;
-    overflow: hidden;
-}
-
-.cropped1 img {
-    width: 400px;
-    height: 300px;
-    margin: -75px 0 0 -100px;
-}  */
 .r_ml-n5 {
     margin-left: -3rem!important;
 }
@@ -392,7 +374,7 @@ header{
         min-height: 450px;
     }
     .r_img-75{
-        width: 100%;
+        width: 75%;
         margin-bottom: 20px;
     }
     .footer-row{
@@ -571,5 +553,7 @@ header{
     .r_px-1-res-col{
         padding: 0 1rem!important;
     }
-
+    .r_mt-0{
+        margin-top: 0!important;
+    }
 }
