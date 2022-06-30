@@ -104,7 +104,7 @@ header{
     margin-top: 280px;
 }
 .section-2{
-    background-image: url(./Media/page-2/Detalle-fondo.png);
+    background-image: url(./Media/page-3/BASE\ fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -341,6 +341,67 @@ header{
 .r_pl-2{
     padding-left: 2rem!important;
 }
+/*Section 8 START*/
+.section-8 {
+    background: url(./Media/page-3/BASE\ fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+  }
+  
+  .section-8 .top {
+    margin-top: 4rem;
+  }
+  
+  .section-8 .top p:first-child {
+    font-size: 1.1rem;
+    color: #000;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #ff6400), to(#ff8f00));
+    background: linear-gradient(90deg, #ff6400 50%, #ff8f00 100%);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.6rem 1rem 0 1rem;
+  }
+  
+  .section-8 .top .text-center img {
+    padding-top: 3rem;
+  }
+  
+  .section-8 .bottom {
+    margin: 3rem;
+  }
+  .form-label-subs{
+    color: #fff;
+    font-family: 'arial';
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .r_field-subs{
+    height: calc(36px + .75rem + 2px)!important;
+    background-color: #9ca7b1;
+    border: 1px solid #9ca7b1;
+    border-radius: 0px;
+}
+.r_field-subs::placeholder{
+    font-weight: bold;
+    color: #606b78;
+    text-align: center;
+}
+.form-bg{
+    background-image: url(./Media/page-3/Rectángulo\ redondeado\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 70px 0;
+}
+.r_cropimg-2{
+    width: 100%;
+}
+.r_cropimg{
+    width: 120%;
+}
+/*section 8 END*/ 
 
 @media screen and (max-width: 1024px) {
     .r_gradient-subtitle{
@@ -457,6 +518,9 @@ header{
     .r_pl-2 {
         padding-left: 0rem!important;
     }
+    .r_cropimg{
+        width: 40%;
+    }
 }
 @media screen and (max-width: 430px) {
     .r_gradient-subtitle {
@@ -555,5 +619,8 @@ header{
     }
     .r_mt-0{
         margin-top: 0!important;
+    }
+    .r_cropimg{
+        width: 60%;
     }
 }
