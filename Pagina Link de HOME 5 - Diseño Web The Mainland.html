@@ -6,40 +6,509 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="container-fluid align-items-center p-4">
-        <div class="container-xl d-flex align-self-center justify-content-between align-items-center">
-            <div class="logo"><img src="../Media/Compressed Media/ietras-logo.webp" alt=""></div>
-            <div class="nav-menu align-middle align-self-center">
-                <nav class="align-self-center">
-                    <ul class="d-flex m-0 justify-content-between align-self-center align-middle">
-                        <li class="align-self-center"><a href="">LA<br>
-                            PLATAFORMA</a></li>
-                        <li class="align-self-center"><a href="">MARKETPLACE</a></li>
-                        <li class="align-self-center"><a href="">MAINDAO</a></li>
-                        <li class="align-self-center"><a href="">BLOG</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="menu-icons align-middle d-flex justify-content-between">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="41" viewBox="0 0 40 41">
+    <header class="container-fluid align-items-center pt-3">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">LA<br>
+                    PLATAFORMA <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">MARKETPLACE</a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">MAINDAO</a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">BLOG</a>
+                </li>
+              </ul>
+              <div class="menu-icons align-items-center d-flex justify-content-between">
+                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="41" viewBox="0 0 40 41">
                     <image id="Buscar" width="40" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAEX0lEQVRYhcWYa4hVVRTHf95mnKK5TmqpmTFhaAWVlBmhSGX2ELUPmUQm1peelET0pPoWPcYeVOaLsBc+0ZJCkHA+BA0VJfZSeyBEBkEJpjJOajmxmv+h7drnztl3OqN/ONyz195n7f9de6+119oDli1dTkloAM4BJgOXAqOBk4FuYC+wE/gc+Ejv3SnTNkSS+tEMzAfmiGAtnVOBO4Eu4AdgJfCq2jVRS1kq7gPuAc6t45uTgHF67E+9CLwdjRIqkSQNI4ENwCt1kvMwkm8Ba4ERUW8fLXihFNpy5uFP7bVdwEEZwfbi6cDFsqDHbOAs4Gbtzz4TPBvYpMk8tsiq64Dvot4ejAHmAbOA81zfBOBdYCbwcyasZ4ntn6/OIWcWewqYqN+M3BBgLHC+rG1L+CPwpCz5AnDI6bLVWRUaLpWgjXsJuMTJfwWu06Q2WSNwLbAG2A58A3wJfA18D2wFHtS39nsDsMfpzP7ov0iNgzOAD5ysE5gEfKX2RcAi4LLo6xjmtbdKepW2RnMw6pD0bU+xoI15IJL2TJCRm6MAnEIOBfNsGduBO1z/QKCNRCe5HLjSyWwvrte7ed4bUpphv/bSh8DvWvrxwFygqvj5VzDexk4HbglkU4DWFIJTXHsf8IjezQkWO3LvAM8AO9x37drHRvZANEvPqWIrMUBtc8p5RUvcoP0X4pMgDJgntgR9zyqMeHIZDtcgZ/hMFg8xrYignRIXONkK/bbqfM3wHvBYpKE+bHCjzygiaIH5hKB9QM6ATocT9W6ZydPR1/XjJ/dFtYhgs2vv1oOW8XGgA7gL+CL6un7scs7TXeQk/g90BQoyq5VhuQx/aI5qLQIeR1y70S152RjoQ18RwU7XrrqQUjZG+myniOAvrp0lAP2FVqf3SBHBHc6zbHlvikaVh4lO056UJd7kZDOCaF8mTgVudPqSkgUf3cfmnC5lwLLq4U7Pm6kEtwVts95rwGklkrO994STWXK7MYVgp87YsI49U0deX4uuEBa6XpcHh7Bq73DqBJYV/+1kVyuT+T9oUKo21en4VqSTLNCiTDnv1LFE8/1aJWMBzGIbXQ6IDHF7dmIVERysKm1y1PMfZiqBmB8eUb1gSHCGX5Mz7H7g06yRZ5WQ3PqcbDoP5tkvA/dq4i16dit2jlBGPU76RuXoQKXFwlBQi+BQYHkiuRBj9NwmWVa4N0Yjj0aXqrxFviNviYfq5uD6qCfGtkhyNJoSyHVorohcHsGqagpfh+ThOZWGs7Vnkq7TAuxUbXMFsDnqFcIlblLBPS0aFWMB8Kik6/RM0vWabYthOVnPQRXpH6subu+lPokINilc5HmVR1tQ1YXo0NMipxgkveh6xKrB35SUJiMjuCKR3IIa5ELs1VMKKgqKsxKUWRh5OJL2MyqKXUV4XgH0mKOivdIblgAP9dLfr6jkXH+FsGTg7kh6jAm2RdIeLNQF+XGFebHdVFkSanvsFN1G2Z2LXWUcXwD/AOoH0ZvMws5SAAAAAElFTkSuQmCC"/>
                   </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
                     <image id="Idioma" width="41" height="41" xlink:href="data:img/png;base64,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"/>
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="52" viewBox="0 0 66 52">
+                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="52" viewBox="0 0 66 52">
                     <image id="Icono_menu" data-name="Icono menu" width="66" height="52" xlink:href="data:img/png;base64,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"/>
                 </svg> 
-                <div class="conectar">
+                <div class="conectar align-items-center mx-2">
                     <div class="conectar-btn">
                         <a href="#">CONECTAR</a>
                     </div>
                 </div>         
             </div>
-        </div>
+            </div>
+          </nav>
     </header>
+    <main>
+        <div class="container-fluid section-1">
+            <div class="row r_to-height align-items-center w-100">
+            </div>
+            <div class="row r_row-1 align-items-center">
+                <div class="container-lg">
+                    <h1 class="r_gradient-heading-outline r_gradient-text text-center">nft landsmain</h1>
+                    <h1 class="r_gradient-text text-center">nft landsmain</h1>
+                </div>
+                <!-- <div class="col-lg-4 r_gradient-subtitle r_mt-150 align-middle text-center mx-auto">
+                    <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                        tipos de nfts landsmain
+                    </h3>
+                </div> -->
+            </div>
+            <div class="row r_to-height-125 align-items-center">
+            </div>
+            <div class="row r_row-1 r_mt-150 r_mt-150-res align-items-center w-100">
+                <div class="col-lg-4 r_gradient-subtitle align-middle text-center mx-auto">
+                    <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                        tipos de nfts landsmain
+                    </h3>
+                </div>
+            </div>
+            <div class="row r_row-2">
+                <div class="row r_px-5-res px-5 r_mt-50 d-flex">
+                    <div class="col-lg-6">
+                        <p class="font-weight-bold">
+                            La clasificación de los bienes raíces NFT LandsMain derivarán en sus atributos únicos de construcción, ubicación y dimensiones, contando con seis (6) rarezas distintas. Usted elegirá la que mejor se adapte a su modelo de negocio. Adicionalmente al poseerlo les concede privilegios y acceso a eventos especiales en “The Mainland”.
+                            <br><br> 
+                            ¿Por qué es útil saber la rareza? La rareza en los NFT LandsMain no es algo realmente determinante como están acostumbrados de ver en la gran mayoría de las colecciones NFT, donde en sus diseños solo cambia una mínima característica visual en particular del mismo NFT repetido (como nariz, boca, objeto, color o posición). 
+                            </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="font-weight-bold">
+                            La rareza va determinada por el factor de usabilidad y del poder de utilidad que otorga al poseerlo, aunque tienen  aspectos muy importantes y deseables, como su ubicación y tamaño. Cada uno cuenta con un poder de construcción que lo hace único en sí mismo, ya que todo dependerá de lo que usted quiera desarrollar de su idea o proyecto, sumando un valor creativo, de uso y económico que le agregara una rareza irrepetible, por lo que al construir algo sobre su LandsMain, su NFT pasara a ser algo totalmente único. A continuación, los tipos de NFTs que tendremos:
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container-fluid section-1">
+            <div class="row r_row-1 align-items-center">
+                <div class="container-lg r_gradient ">
+                    <h1 class="r_gradient-heading-outline r_gradient-text text-center">nft landsmain</h1>
+                    <h1 class="r_gradient-text text-center">nft landsmain</h1>
+                </div>
+                <div class="col-lg-4 r_gradient-subtitle align-middle text-center mx-auto">
+                    <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                        tipos de nfts landsmain
+                    </h3>
+                </div>
+            </div>
+            <div class="row r_row-2">
+                <div class="col-lg px-5 r_mt d-flex">
+                    <div class="col-lg-6">
+                        <p>
+                            La clasificación de los bienes raíces NFT LandsMain derivarán en sus atributos únicos de construcción, ubicación y dimensiones, contando con seis (6) rarezas distintas. Usted elegirá la que mejor se adapte a su modelo de negocio. Adicionalmente al poseerlo les concede privilegios y acceso a eventos especiales en “The Mainland”.
+                            <br><br> 
+                            ¿Por qué es útil saber la rareza? La rareza en los NFT LandsMain no es algo realmente determinante como están acostumbrados de ver en la gran mayoría de las colecciones NFT, donde en sus diseños solo cambia una mínima característica visual en particular del mismo NFT repetido (como nariz, boca, objeto, color o posición). 
+                            </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>
+                            La rareza va determinada por el factor de usabilidad y del poder de utilidad que otorga al poseerlo, aunque tienen  aspectos muy importantes y deseables, como su ubicación y tamaño. Cada uno cuenta con un poder de construcción que lo hace único en sí mismo, ya que todo dependerá de lo que usted quiera desarrollar de su idea o proyecto, sumando un valor creativo, de uso y económico que le agregara una rareza irrepetible, por lo que al construir algo sobre su LandsMain, su NFT pasara a ser algo totalmente único. A continuación, los tipos de NFTs que tendremos:
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="container-fluid section-2">
+            <div class="row r_px-5-res px-5 pb-5 w-100">
+                <div class="col-lg-4  r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 text-right text-shadow r_yellow r_color-heading">LandsMain proyecto (basica)</h5>
+                            <p class="font-weight-bold">Estas NFTs son creadas por los dueños de los NFT LandsMain Obras y City únicamente; sus especificaciones de precio, datos, normas, ubicación, tamaños, rarezas, nombre y diseño del NFT, y uso de los espacios serán establecidos según la visión y creación de su constructor, cada uno como regla básica le da derecho a la creación de su avatar, acceso al panel de usuario y herramientas de construcción de la plataforma para personalización y adquirir mejoras, assets estéticos o personalizables para su espacio. Las NFTs LandsMain Proyecto, no dan derecho al poder de voto, ni accionario, ni de rentabilidad sobre la plataforma.
+                                Para poder modificar las reglas o construcción de la estructura o edificación creada en su NFT, la única manera, es que el 100% de los NFT Proyecto generados por su constructor, vuelvan a ser adquiridos por la misma cartera poseedora del NFT Obras o City que la construyo, por lo que la titularidad de su NFT Proyecto permanecerá intacta por siempre, mientras no ceda el derecho de posesión de su NFT.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 r_order-1">
+                    <img class="ml-1 r_img-75 " src="./Media/Compressed Media/basica.webp" alt="Generic placeholder image">
+                </div>
+                <div class="col-lg-4  r_order-4">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 text-right text-shadow r_color-heading">LandsMain residencial (comun)</h5>
+                            <p class="font-weight-bold">Permite la construcción moderna de obras diseñadas específicamente para uso comercial o residencial (casas modernas, townhouse, chalets, lofts, oficinas, juegos,  otros). 
+                                Sabemos que no dormirán ni vivirán en ellas, pero sus usos son infinitos. Podrán usarla como casa modelo para su proyecto de vivienda real, como centro de reuniones virtuales con amigos, socios o clientes, como oficina virtual, para ofrecer servicios y/o productos, como lugar para exhibir, ofrecer y presumir sus posiciones en NFTs, entre otras. Ubicadas en zonas específicas residenciales y vacacionales, su tamaño es de 600 m2, con una altura máxima de construcción de 9m. Podrán unir varias NFTs Residencial adjuntas a su parcela (parcelas vecinas) para convertirla en una sola propiedad más grande, sumando los beneficios.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2  r_order-3">
+                    <img class="ml-1 r_img-75" src="./Media/Compressed Media/residencial.webp" alt="Generic placeholder image">
+                </div>
+            </div>
+            <div class="row r_px-5-res px-5 w-100">
+                <div class="container-lg">
+                </div>
+                <div class="col-lg-4 r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 text-right text-shadow r_green r_color-heading">LandsMain comercial (poco comun)</h5>
+                            <p class="font-weight-bold">Permite la construcción para uso comercial (empresas, negocios, escuelas, galerías de arte, ecommerce, tiendas, juegos, otros). No hay límites para la creación comercial que desee desarrollar. Podrá iniciar su idea desde el mundo virtual, probarla y luego llevarla al mundo real o viceversa. 
+                                Ubicadas en diferentes zonas comerciales, su tamaño es de 800 m2, con una altura máxima de construcción de 12m. Podrán unir varias NFTs Comercial o NFTs Residencial adjuntas a su parcela (parcelas vecinas) para convertirla en una sola propiedad más grande, sumando los beneficios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 r_order-1">
+                    <img class="ml-1 r_img-75" src="./Media/Compressed Media/comercial.webp" alt="Generic placeholder image">
+                </div>
+                <div class="col-lg-4 r_order-4">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 text-right text-shadow r_lblue r_color-heading">LandsMain empresarial (rara)</h5>
+                            <p class="font-weight-bold">
+                                Permite la construcción para uso comercial (empresas, negocios, ecommerce, salones de exposiciones, tiendas, juegos, supermercados, ferreterias, oficina, otros). No hay límites para la creación comercial que desee desarrollar. Si su negocio es virtual, podrá crear su figura física que lo represente para poder atender, premiar o socializar con sus clientes o fans. 
+                                Este NFT le permite si así lo desea, fragmentar su construcción como nuevas propiedades inmobiliarias NFT independientes LandsMain Proyecto (básicas), con un máximo a dividir de 20 NFTs, las cuales podrán comercializar (vender, subastar o alquilar) en el Marketplace de manera individual de acuerdo a la proyección de su proyecto. Ubicadas en diferentes zonas comerciales con mejor ubicación, su tamaño es de 1.600 m2, con una altura máxima de construcción de 24m. Podrán unir varias NFTs Empresarial, NFTs Comercial o NFTs Residencial adjuntas a su parcela (parcelas vecinas) para convertirla en una sola propiedad más grande, sumando los beneficios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 r_order-3">
+                    <img class="ml-1 r_img-75" src="./Media/Compressed Media/empresarial.webp" alt="Generic placeholder image">
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center">
+                <img src="./Media/Compressed Media/fLECHA ARRIBA.webp" alt="">
+            </div>
+        </div>
+        <div class="container-fluid section-3">
+            <div class="row r_px-5-res px-5 pb-5 w-100 ">
+                <div class="col-lg-4 r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 text-right text-shadow r_pink r_color-heading">LandsMain obras (epica)</h5>
+                            <p class="font-weight-bold">
+                                Son escasas, permiten la construcción de centros comerciales, centros deportivos, museos, juegos, complejos de oficinas y rascacielos modernos, que posteriormente si así lo desea, podrán fraccionar como nuevas propiedades inmobiliarias independientes llamadas NFTs LandsMain Proyecto (básicas) con un máximo de emisión de 450 NFTs, las cuales podrán comercializar (vender, subastar o alquilar) en el Marketplace de manera individual de acuerdo a la proyección de su proyecto, o podrán darlas como obsequios, incentivos, o premios a sus clientes o fans, pudiendo incluso establecer su propio gobierno descentralizado (DAO) a través de los NFTs que crearán.
+                                Estarán ubicadas en zonas céntricas de alto tráfico, su tamaño es de 10.000 m2, con una altura máxima de construcción de 160m. Podrán unir varias NFTs Obras, NFTs Empresarial o NFTs Comercial adjuntas a su parcela (parcelas vecinas) para convertirla en una sola propiedad más grande, sumando los beneficios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 r_order-1">
+                    <img class="ml-1 r_img-75" src="./Media/obras.png" alt="Generic placeholder image">
+                    
+                </div>
+                <div class="col-lg-4 r_order-4">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 text-right text-shadow r_orange r_color-heading">LandsMain city (legendaria)</h5>
+                            <p class="font-weight-bold">
+                                LandsMain City (legendaria): De las más exclusivas y escasas, ideales para esos grandes y ambiciosos proyectos que necesitan de gran espacio para su desarrollo, perfectas para crear ciudades o distritos, metaversos, juegos, universidades, réplicas de maravillas naturales y/o modernas, complejos hoteleros, anteproyectos de construcción o arquitectónicos. Ubicadas en diferentes zonas del conteniente, su tamaño es de 22.500 m2 (150m x 150m), con una altura máxima de construcción de 90m. Si está en sus planes de negocio, este NFT le permite fraccionar su proyecto como nuevas propiedades inmobiliarias independientes a través de la creación de NFTs LandsMain Proyecto (básicas), con un máximo de emisión de 1,000 NFTs, las cuales podrán comercializar (vender, subastar o alquilar) en el Marketplace de manera individual de acuerdo a la proyección de su proyecto, o podrán darlas como obsequios, incentivos, o premios a sus clientes o fans, pudiendo incluso establecer su propio gobierno descentralizado (DAO) a través de los NFTs que crearán. Podrán unir varias NFTs City, NFTs Obras, NFTs Empresarial o NFTs Comercial adjuntas a su parcela (parcelas vecinas) para convertirla en una sola propiedad más grande, sumando los beneficios.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 r_order-3">
+                    <img class="ml-1 r_img-75" src="./Media/city.png" alt="Generic placeholder image">
+                </div>
+            </div>
+            <div class="row px-5 r_px-5-res w-100 r_flex-column-reverse">
+                <div class="container-lg">
+                </div>
+                <div class="col-lg-4 r_order-6">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 text-right r_red text-shadow r_color-heading">nft gobernanza</h5>
+                            <p class="font-weight-bold">
+                                El sistema “EICC” (Electoral Incentive Community Council, o en español, Consejo Comunitario de Incentivo Electoral) viene a separar de manera equitativa la posesión de los activos NFTs LandsMain del derecho a votación, dejando a elección del inversor, si desea o no, tener participación sobre la gobernanza, convirtiendo el poder de votación que le corresponde de acuerdo a su inversión, en un activo adicional único NFT de gobernanza. 
+                                Este activo será preciado, ya que no solo le dará poder de voto y proposición sobre la plataforma, sino que también le permitirá acceder a nuevos incentivos económicos. La rentabilidad y beneficios económicos sobre la plataforma se mantendrá sobre su activo NFT LandsMain, bajo la misma proporción de votación que le corresponde de acuerdo a su inversión (proporción de cambio 1:1). El inversor podrá ceder o subastar su NFT de gobernanza en el Marketplace. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 r_order-5">
+                    <img class="ml-1 r_img-75" src="./Media/gobernanza.png" alt="Generic placeholder image">
+                </div>
+                <div class="col-lg-6 r_order-7 r_mt-50">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-3 text-center text-shadow r_color-heading-s">importante</h5>
+                            <p class="font-weight-bold">
+                                Si activa la función de creación de los nuevos NFTs, las nuevas LandsMain Proyecto creadas, no tendrán ningún poder de voto, ni accionario, ni de rentabilidad sobre la plataforma. Estos beneficios y poderes quedaran en su NFT original Obras, City o Empresarial, el cual ya no podrá ser vendido, ni alquilado, ni subastado (solo podrá transferirlo). La única manera de volver a construir o reconstruir la estructura o proyecto que creo, es que el 100% de los NFTs generados vuelvan a su cartera poseedora del NFT original. 
+                                La plataforma cobrará una comisión del 10% del precio de venta por cada venta de los NFT LandsMain Proyecto creados por primera vez (3% para la tesorería de MainDAO, 3% entre todos los poseedores de NFTs LandsMain, 4% para la recompra y quema del token $MAIN), las reventas de la misma después de su primera venta generan una comisión automática del 5%, la cual se redistribuirá de la siguiente manera: 2% para la tesorería de MainDAO, 2% entre todos los poseedores de NFTs LandsMain y 1% a la cartera del poseedor del NFT Empresarial, Obras o City  que los creo por concepto de derecho autor.
+                                La plataforma cobrara una comisión del 6% del precio de venta por cada venta de los NFT LandsMain (exceptuando las LandsMain Proyecto) la cual se redistribuirá de la siguiente manera: 2% para la tesorería de MainDAO, 2% entre todos los poseedores de NFTs LandsMain, 1% para la recompra y quema del token $MAIN y 1% al fondo de la Fundación Mainland.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-2">
+                    <img class="ml-1 r_img-75" src="./Media/Compressed Media/empresarial.webp" alt="Generic placeholder image">
+                </div> -->
+            </div>
+            <div class="row w-100 justify-content-center">
+                <img src="./Media/Compressed Media/fLECHA ARRIBA.webp" alt="">
+            </div>
+        </div>
+        <div class="container-fluid section-3">
+            <div class="row px-5 r_px-5-res align-items-center pb-5 w-100">
+                <div class="col-lg-4 align-middle">
+                    <div class="r_gradient-subtitle r_gradient-subtitle-res align-middle text-center mx-auto">
+                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                            caracteristicas<br>y proporciones
+                        </h3>
+                    </div>
+                    <h2 class="r_subheading mt-2 text-center">
+                        nft landsmain
+                    </h2>
+                </div>
+                <div class="col-lg-8">
+                    <img class="r_table-img" src="./Media/Tipos NFT.png" alt="">
+                </div>
+            </div>
+            <div class="row px-5 r_px-5-res align-items-center pb-5 w-100">
+                <div class="col-lg-4 mx-auto align-middle">
+                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                            nftSnomics
+                        </h3>
+                    </div>
+                    <h2 class="r_subheading mt-2 text-center">
+                        landsmain
+                    </h2>
+                </div>
+            </div>
+            <div class="row section-4-bg pl-5 mt-n5 align-items-center py-2 w-100">
+                <div class="col-lg-6 pl-5 align-items-center ml-5">
+                    <div class="align-middle d-flex mx-auto">
+                        <h3 class="m-0 ml-5 mr-2 r_label-text text-right pt-1">
+                            Nombre del NFT<br>
+                            Blockchain<br>
+                            Tipo de NFT<br>
+                            Maximo supply NFT<br>
+                            Maximo supply m2<br>
+                        </h3>
+                        <h3 class=" m-0 ml-2 r_label-text text-left pt-1">
+                            LandsMain<br>
+                            ETH / BSC<br>
+                            ERC-1155 / EIP-3664<br>
+                            132,700<br>
+                            180 millones<br>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid align-items-center d-flex mt-n5 r_mt-50 mx-auto">
+                <div class="row px-5 r_px-5-res align-items-center pb-5 w-100">
+                    <div class="col-lg-6 text-center mx-auto align-items-center">
+                            <img class="section-4-img" src="./Media/cuadro nft.png" alt="">
+                    </div>
+                    <div class="col-lg-6 text-center mx-auto r_mt-50 align-items-center">
+                            <img class="section-4-img" src="./Media/descripcion.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center">
+                <img src="./Media/Compressed Media/fLECHA ARRIBA.webp" alt="">
+            </div>
+        </div>
+        <div class="container-fluid section-4">
+            <div class="row px-5 r_px-5-res align-items-center pb-5 w-100">
+                <div class="col-lg-4 mx-auto align-middle">
+                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                            distribucion
+                        </h3>
+                    </div>
+                    <h2 class="r_subheading mt-2 text-center">
+                        NFt landsmain
+                    </h2>
+                </div>
+            </div>
+            <div class="row px-5 r_px-5-res align-items-center pb-5 w-100">
+                <div class="col-lg-8 align-middle">
+                    <img class="section-4-img" src="./Media/Capa 994.png" alt="">
+                </div>
+                <div class="col-lg-4 align-middle">
+                    <p class="mr-5 pr-5 text-right r_colorful-p">
+                        <span class="r_purple">73% bloqueado por 12 meses,<br>
+                        (luego liberación a razón de 5% por año)</span><br>
+                        <span class="r_blue">Liberado el 25% para realizar 3 Pre-ventas</span><br>
+                        <span class="r_orange">Liberado 1% para alianzas comerciales</span><br>
+                        <span class="r_red">1% bloqueado por 48 meses</span><br>
+                        </p>
+                    <img class="section-4-img" src="./Media/Capa 993.png" alt="">
+                </div>
+            </div>
+            <div class="row px-5 r_px-5-res align-items-center py-2 w-100">
+                <div class="col-lg-6 align-items-center">
+                    <p>En esta etapa se comercializara el 25% de los espacios disponibles (45.000,000 m²) divido en 3 rondas de ventas, mas un 2% de acuerdo al cuadro de arriba. El 73% restante será liberado en los próximos dieciséis años y medio, con una tasa de aumento anual del 5% (8,760,000 m²). Esta liberación quedaría establecida de la siguiente forma según sus tipos y respectivas cantidades:</p>
+                    <img class="section-4-img" src="./Media/Capa 995.png" alt="">
+                </div>
+                <div class="col-lg-6 align-items-center">
+                    <p>Estos NFTs se destinaran a la venta publica en nuestro “Main Marketplace” cada año, pagados únicamente con el token $MAIN, quedando establecido un precio fijo reflejado en moneda estable con el precio publicado de la ronda Nº 3 de la preventa. Este precio sera calculado cada año el día de la venta publica, para establecer el monto a pagar con el token $MAIN.Las ventas se realizaran sobre la base de FCFS (primero en llegar, primero en ser atendido) hasta que se agote el 100 % de los NFTs asignados a la venta. No son NFTs aleatorios, estarán identificados a lo largo de todo el mapa urbano del continente según su tipo, pudiendo elegir la ubicación y tipo de NFT que prefieran según la disponibilidad.</p>
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center">
+                <img src="./Media/Compressed Media/fLECHA ARRIBA.webp" alt="">
+            </div>
+        </div>
+        <div class="container-fluid section-5">
+            <div class="row px-5 r_px-5-res align-items-center pb-5 w-100">
+                <div class="col-lg-4 mx-auto align-middle">
+                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                            preventa
+                        </h3>
+                    </div>
+                    <h2 class="r_subheading mt-2 text-center">
+                        NFt landsmain
+                    </h2>
+                </div>
+            </div>
+            <div class="row px-5 r_px-5-res align-items-center pb-5 w-100">
+                <div class="col-lg-4 align-middle">
+                    <img class="section-5-img-table" src="./Media/Capa 997.png" alt="">
+                </div>
+                <div class="col-lg-8 align-middle">
+                    <img class="section-5-img-table" src="./Media/Capa 996.png" alt="">
+                </div>
+            </div>
+            <div class="row px-5 r_px-5-res align-items-center py-2 w-100">
+                <div class="col-lg-6 align-items-center">
+                    <p>La preventa 1 y 2 de los NFTs LandsMain, estará habilitada únicamente para los holders del token $MAIN que participen en alguna de las tres “Presale Staking Pool NFT”  disponibles con recompensas. El periodo de bloqueo sera de 90 días continuos, una vez abiertas las pools, podrá stakear sus tokens $MAIN cuando desee, con fecha máxima hasta 1 semana antes de la fecha de venta de cada preventa para poder ser elegible. Una vez bloqueados sus tokens tendrá derecho a participar en las 2 preventas, el proceso de venta iniciara por la Pool 3, seguida de la Pool 2 y por ultimo la Pool 1. Para la compra de los NFTs se aceptaran pagos en USDT, USDC, BUSD y ETH.<br><br> Para brindar una participación justa y con mayor oportunidad para todos establecimos un sistema de lotería y de asignación garantizada con ciertas condiciones para que sea un proceso placentero y divertido, ya que los NFT LandsMain “No son aleatorios”, deberán ser elegidos por ustedes de forma interactiva con su avatar, explorando las calles de Main City y el continente “The Mainland”, pudiendo elegir la ubicación y tipo de NFT que prefieran para su proyecto según la disponibilidad. Por lo que les aconsejamos establecer su estrategia y correr para elegir las mejores ubicaciones.<br><br> A continuación la descripción y condiciones de las pools:</p>
+                </div>
+                <div class="col-lg-6 align-items-center">
+                    <img class="section-5-img-table" src="./Media/POOLS.png" alt="">
+                    <p><br>Estos NFTs se destinaran a la venta publica en nuestro “Main Marketplace” cada año, pagados únicamente con el token $MAIN, quedando establecido un precio fijo reflejado en moneda estable con el precio publicado de la ronda Nº 3 de la preventa. Este precio sera calculado cada año el día de la venta publica, para establecer el monto a pagar con el token $MAIN.Las ventas se realizaran sobre la base de FCFS (primero en llegar, primero en ser atendido) hasta que se agote el 100 % de los NFTs asignados a la venta. No son NFTs aleatorios, estarán identificados a lo largo de todo el mapa urbano del continente según su tipo, pudiendo elegir la ubicación y tipo de NFT que prefieran según la disponibilidad.</p>
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center">
+                <img src="./Media/Compressed Media/fLECHA ARRIBA.webp" alt="">
+            </div>
+        </div>
+        <div class="container-fluid section-6">
+            <div class="row px-5 r_px-5-res align-items-center pb-5 w-100">
+                <div class="col-lg-4 mx-auto align-middle">
+                    <div class="r_gradient-subtitle align-middle text-center w-100 mx-auto">
+                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                            uso de los fondos
+                        </h3>
+                    </div>
+                    <h2 class="r_subheading mt-2 text-center">
+                        preventa nft landsmain
+                    </h2>
+                </div>
+            </div>
+            <div class="row px-5 r_px-5-res align-items-top py-2 w-100">
+                <div class="col-lg-4 align-items-center">
+                    <p class="font-s-12">Encontramos que la mejor forma de trabajar en equipo, es concentrando la fuerza laboral y creativa en un mismo lugar, dotado con todas las herramientas de capacitación y equipos tecnológicos para crear el ambiente perfecto que nos permitará desarrollar el futuro comercial en el multiverso “The Mainland”. Por ello, los recursos recaudados de las rondas de preventa del token $MAIN y de los NFTs LandsMain correspondientes al equipo de trabajo y desarrollo, se invertirán para unir el mejor y mas capacitado equipo de trabajo, creando el estudio creativo para el desarrollo continuo y escalable durante mas de 4 años de todos los elementos establecidos para la gestión, creación y organización de las herramientas para el multiverso “The Mainland”.<br><br> y toda su infraestructura, sin afectar o tomar liquidez alguna del proyecto. Con la ultima preventa de los NFT LandsMain, la plataforma, su propiedad intelectual y todos los productos relacionados que existen y existirán serán gestionados y administrados por la MainDAO, y su propiedad y gobierno se dividirán como se establece entre todos los poseedores de  NFT LandsMain.</p>
+                </div>
+                <div class="col-lg-8 mt-n5 align-items-top">
+                    <img class="section-5-img-table" src="./Media/Capa 1001.png" alt="">
+                </div>
+            </div>
+            <div class="row px-5 r_px-5-res justify-content-around align-items-top py-2 w-100 mx-auto">
+                <div class="col-lg-5 text-center align-items-center">
+                    <h5 class="r_subs-text">Suscribete para obtener acceso anticipadoa<br> la Preventa 3 de los NFT LandsMain</h5>
+                </div>
+            </div>
+            <div class="row px-5 r_px-5-res justify-content-around align-items-top py-2 w-100 mx-auto">
+                <div class="col-lg-5 text-center align-items-center">
+                    <form action="">
+                        <div class="form-group d-flex">
+                            <input type="email" class="form-control r_field" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email">
+                            <button type="submit" class="btn r_subs-btn">Submit</button>
+                          </div>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="row px-5 r_px-5-res sec-6-row-6 justify-content-around align-items-center py-2 w-100 mx-auto">
+                <div class="col-lg-4 text-center align-items-center">
+                    <img class="section-5-img" src="./Media/Coming Soon.png" alt="">
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center">
+                <img src="./Media/Compressed Media/fLECHA ARRIBA.webp" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fuild footer-bg">
+            <div class="row footer-row px-5 r_px-5-res align-items-center justify-content-around pb-5 w-100">
+                <div class="col-lg-3 r_footer-w50 mx-auto align-middle r_border-right">
+                    <div class="footer-logo text-center">
+                        <img class="footer-img" src="./Media/Logo completo.png" alt="">
+                        <p class="text-center r_pstyle mt-2">conectando El comercio<br>
+                            y el multiverso en un solo lugar</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto r_border-right align-middle">
+                    <ul class="footer-menu m-2">
+                        <li><a href="">la plataforma</a></li>
+                        <li><a href="">marketplace</a></li>
+                        <li><a href="">maindao</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">main launchpad</a></li>
+                        <li><a href="">main dex</a></li>
+                        <li><a href="">main bots ia</a></li>
+                        <li><a href="">main avatar</a></li>
+                        <li><a href="">main marketing</a></li>
+                        <li><a href="">Contactanos</a></li>
+                        <li><a href="">nft landsmain</a></li>
+                        <li><a href="">token $main</a></li>
+                        <li><a href="">construir tu negocio</a></li>
+                        <li><a href="">fundacion mainland</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto r_border-right align-middle">
+                    <ul class="footer-menu m-2">
+                        <li><a href="">Ayuda / FAQ</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                        <li><a href="">descargo de responsabilidad</a></li>
+                        <li><a href="">guia / documentacion</a></li>
+                        <li><a href="">sdk / mcms</a></li>
+                        <li><a href="">auditorias</a></li>
+                        <li><a href="">programadores / desarrolladores</a></li>
+                        <li><a href="">trabaja con nosotros</a></li>
+                        <li><a href="">programa de recompensas</a></li>
+                        <li><a href="">bug bountry</a></li>
+                        <li><a href="">team main</a></li>
+                        <li><a href="">whitepaper</a></li>
+                        <li><a href="">roadmap</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto align-middle">
+                    <img class="footer-social-img" src="./Media/Redes sociales.png" alt="">
+                    <form action="">
+                        <div class="form-group text-center align-items-center justify-content-around">
+                            <input type="email" class="form-control r_field mt-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email">
+                            <button type="submit" class="btn r_subs-btn-footer mt-2">Submit</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-bg">
+            <div class="copyright-row align-self-center text-center">
+                <p class="mb-0">© 2021 <b>The Mainland –  All Rights Reserved by the MainDAO<b></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3bc0c44d7a.js" crossorigin="anonymous"></script>
 </body>
 </html>
