@@ -19,12 +19,44 @@ $(function () {
 		prevArrow: $('.sec5prev'),
 		nextArrow: $('.sec5next'),
 		arrows: true,
+		responsive: [
+			{
+				breakpoint: 780,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	});
 	$('.cards').slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		prevArrow: $('.sec7prev'),
 		nextArrow: $('.sec7next'),
+		responsive: [
+			{
+				breakpoint: 780,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
 	});
 	$('.section-11 .slider1').slick({
 		slidesToShow: 3,

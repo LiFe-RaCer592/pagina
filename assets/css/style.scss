@@ -2,6 +2,7 @@ $darkOrange: #ff6400;
 $lightOrange: #ff8f00;
 $darkBlue: #09233e;
 $fieldsBg: #6f7c8a;
+$paddingSides: 100px;
 $progressBarGradient: linear-gradient(
 	-90deg,
 	rgba(153, 255, 239, 1) 20%,
@@ -50,6 +51,12 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 100px 0px;
+	.row {
+		margin: unset !important;
+		.col-lg-6:first-child {
+			padding-left: 0px !important;
+		}
+	}
 	.text-left {
 		margin-top: -80px;
 		position: relative;
@@ -80,7 +87,8 @@ body {
 		background-size: contain;
 		background-repeat: no-repeat;
 		.inner {
-			transform: translate(0, -45%);
+			width: 60%;
+			transform: translate(30%, -45%);
 		}
 		input {
 			// position: absolute;
@@ -115,13 +123,14 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 100px 0;
+	background-position: center;
 	.video {
 		width: 100vw;
 		position: absolute;
 		top: 2rem;
 
 		.middle {
-			height: 53vh;
+			height: 36rem;
 			width: 65em;
 			margin: 0 2.5em;
 		}
@@ -149,7 +158,8 @@ body {
 	background-image: url('../../Media/home/bg3.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 200px 100px 300px;
+	background-position: center;
+	padding: 200px $paddingSides 300px;
 	.logo {
 		width: 50%;
 		margin-left: auto;
@@ -215,9 +225,10 @@ body {
 }
 .section-4 {
 	background: url('../../Media/home/bg4.png');
-	background-position: cover;
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 60px 100px;
+	padding: 60px $paddingSides;
 	.lights {
 		position: absolute;
 		top: 0;
@@ -291,8 +302,9 @@ body {
 	}
 	.left {
 		position: absolute;
-		left: 20rem;
+		left: 14rem;
 		top: 1.8rem;
+
 		li {
 			margin-bottom: 2.8em;
 			line-height: 1.2em;
@@ -310,7 +322,7 @@ body {
 	}
 	.right {
 		position: absolute;
-		right: 18.5rem;
+		right: 12.5rem;
 		top: 1.8rem;
 		li {
 			margin-bottom: 2.8em;
@@ -330,10 +342,11 @@ body {
 }
 .section-5 {
 	background: url('../../Media/home/bg5.png');
-	background-position: cover;
+	background-size: cover;
+	background-position: center;
 	background-color: #d1cdca;
 	background-repeat: no-repeat;
-	padding: 170px 100px 30px;
+	padding: 170px $paddingSides 30px;
 	.top {
 		p {
 			font-size: 1.2rem;
@@ -440,9 +453,10 @@ body {
 }
 .section-6 {
 	background: url('../../Media/home/bg6.png');
-	background-position: cover;
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
-	padding: 130px 100px 50px;
+	padding: 130px $paddingSides 50px;
 	.pl-custom-left {
 		p {
 			color: #000;
@@ -469,9 +483,10 @@ body {
 }
 .section-7 {
 	background: url('../../Media/home/bg7.png');
-	background-position: cover;
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 70px 100px 50px;
+	padding: 70px $paddingSides 50px;
 	h2 {
 		color: #000;
 		background: $textGradient;
@@ -539,10 +554,11 @@ body {
 	}
 }
 .section-8 {
-	background: url('../../Media/home/bg8.png');
-	background-position: cover;
+	background: url(../../Media/home/bg8.png);
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
-	padding: 70px 100px 70px;
+	padding: 70px $paddingSides 70px;
 	.top {
 		margin-top: 4rem;
 		p:first-child {
@@ -565,9 +581,10 @@ body {
 }
 .section-9 {
 	background: url('../../Media/home/bg9.png');
-	background-position: cover;
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
-	padding: 70px 100px 70px;
+	padding: 70px $paddingSides 70px;
 	.text-center {
 		h2 {
 			color: #000;
@@ -654,9 +671,10 @@ body {
 }
 .section-11 {
 	background: url('../../Media/home/bg11.png');
-	background-position: cover;
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 100px 100px 30px;
+	padding: 100px $paddingSides 30px;
 	.text-center {
 		h2 {
 			margin-bottom: 5rem;
@@ -675,7 +693,7 @@ body {
 		width: 110%;
 	}
 	.so-mt {
-		margin-top: 5rem;
+		margin-top: 5rem !important;
 		p {
 			color: #000;
 			background: $textGradient;
@@ -701,7 +719,7 @@ body {
 	background: url('../../Media/home/footerbg1.png');
 	background-position: bottom;
 	background-repeat: no-repeat;
-	padding: 50px 100px 30px;
+	padding: 50px $paddingSides 30px;
 	.left {
 		.contacta {
 			font-family: GrandWilson;
@@ -729,6 +747,9 @@ body {
 		}
 		.phone {
 			.orange {
+				text-decoration: none;
+				font-family: 'Arial';
+				font-weight: bold;
 				position: absolute;
 				right: 3rem;
 				top: 2rem;
@@ -836,3 +857,13 @@ body {
 .slick-arrow.slick-hidden {
 	display: unset;
 }
+.row {
+	margin: unset !important;
+}
+.w-55 {
+	width: 55% !important;
+}
+
+@import 'desktop';
+@import 'tablet';
+@import 'mobile';
