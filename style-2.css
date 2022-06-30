@@ -77,7 +77,7 @@ header{
 .r_gradient-subtitle{
     background-image: linear-gradient(to right, #ff6300, #ff8f00);
     font-family: 'Grand Wilson Sans DEMO';
-    width: 75%;
+    width: 50%;
     /* position: absolute;
     top: 60%;
     left: 50%;
@@ -103,7 +103,35 @@ header{
 .r_mt{
     margin-top: 280px;
 }
-.section-2, .section-3, .section-4, .section-5, .section-6{
+.section-2{
+    background-image: url(./Media/page-2/Detalle-fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+.section-3{
+    background-image: url(./Media/Compressed\ Media/Detalle\ fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+.section-4{
+    background-image: url(./Media/Compressed\ Media/Detalle\ fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+.section-5{
+    background-image: url(./Media/Compressed\ Media/Detalle\ fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+.section-6{
     background-image: url(./Media/Compressed\ Media/Detalle\ fondo.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,6 +180,9 @@ header{
 
 .text-shadow{
     text-shadow: 2.5px 3.5px 4px #000000;
+}
+.r_gold{
+    color: #f1cf00;
 }
 .r_yellow{
     color:#ffcc00;
@@ -302,8 +333,33 @@ header{
 .copyright-row{
     padding: 3px;
     color: #fff;
-    
 }
+
+.cropped1 {
+    /* width: 600px; width of container
+    height: 350px; height of container
+    object-fit: cover; */
+    /* position: absolute;
+    clip: rect(0px,60px,200px,0px); */
+}
+/* .cropped1 {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.cropped1 img {
+    width: 400px;
+    height: 300px;
+    margin: -75px 0 0 -100px;
+}  */
+.r_ml-n5 {
+    margin-left: -3rem!important;
+}
+.r_pl-2{
+    padding-left: 2rem!important;
+}
+
 @media screen and (max-width: 1024px) {
     .r_gradient-subtitle{
         width: 100%!important;
@@ -336,7 +392,7 @@ header{
         min-height: 450px;
     }
     .r_img-75{
-        width: 50%;
+        width: 100%;
         margin-bottom: 20px;
     }
     .footer-row{
@@ -395,7 +451,7 @@ header{
         margin-top: 20px;
     }
     .footer-bg{
-        padding:3rem;
+        padding:1.5rem;
     }
     .r_colorful-p{
         text-align: left!important;
@@ -406,6 +462,18 @@ header{
     }
     ul.navbar-nav.m-auto {
         text-align: center;
+    }
+    .r_ml-n5{
+        margin: 0 20px;
+    }
+    .r_px-2{
+        padding: 2rem!important;
+    }
+    .r_img-75 {
+        margin-top: 0;
+    }
+    .r_pl-2 {
+        padding-left: 0rem!important;
     }
 }
 @media screen and (max-width: 430px) {
@@ -450,7 +518,7 @@ header{
     .r_colorful-p span {
         font-size: 14px;
     }
-    .r_px-5-res .col-lg-6{
+    /* .r_px-5-res .col-lg-6{
         padding: 0px!important;
     }
     .r_px-5-res .col-lg-4{
@@ -461,7 +529,7 @@ header{
     }
     .r_px-5-res .col-lg-3{
         padding: 0px!important;
-    }
+    } */
     .section-5-img {
         width: 75%;
         margin-left: 0px;
@@ -493,6 +561,15 @@ header{
     }
     .r_to-height {
         min-height: 200px;
+    }
+    .r_px-2{
+        padding: 0rem!important;
+    }
+    .r_px-5-res{
+        padding: 0px!important;
+    }
+    .r_px-1-res-col{
+        padding: 0 1rem!important;
     }
 
 }
