@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style-3.css">
+</head>
+<body>
+    <header class="container-fluid align-items-center pt-3">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">LA<br>
+                    PLATAFORMA <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">MARKETPLACE</a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">MAINDAO</a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">BLOG</a>
+                </li>
+              </ul>
+              <div class="menu-icons align-items-center d-flex justify-content-between">
+                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="41" viewBox="0 0 40 41">
+                    <image id="Buscar" width="40" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAEX0lEQVRYhcWYa4hVVRTHf95mnKK5TmqpmTFhaAWVlBmhSGX2ELUPmUQm1peelET0pPoWPcYeVOaLsBc+0ZJCkHA+BA0VJfZSeyBEBkEJpjJOajmxmv+h7drnztl3OqN/ONyz195n7f9de6+119oDli1dTkloAM4BJgOXAqOBk4FuYC+wE/gc+Ejv3SnTNkSS+tEMzAfmiGAtnVOBO4Eu4AdgJfCq2jVRS1kq7gPuAc6t45uTgHF67E+9CLwdjRIqkSQNI4ENwCt1kvMwkm8Ba4ERUW8fLXihFNpy5uFP7bVdwEEZwfbi6cDFsqDHbOAs4Gbtzz4TPBvYpMk8tsiq64Dvot4ejAHmAbOA81zfBOBdYCbwcyasZ4ntn6/OIWcWewqYqN+M3BBgLHC+rG1L+CPwpCz5AnDI6bLVWRUaLpWgjXsJuMTJfwWu06Q2WSNwLbAG2A58A3wJfA18D2wFHtS39nsDsMfpzP7ov0iNgzOAD5ysE5gEfKX2RcAi4LLo6xjmtbdKepW2RnMw6pD0bU+xoI15IJL2TJCRm6MAnEIOBfNsGduBO1z/QKCNRCe5HLjSyWwvrte7ed4bUpphv/bSh8DvWvrxwFygqvj5VzDexk4HbglkU4DWFIJTXHsf8IjezQkWO3LvAM8AO9x37drHRvZANEvPqWIrMUBtc8p5RUvcoP0X4pMgDJgntgR9zyqMeHIZDtcgZ/hMFg8xrYignRIXONkK/bbqfM3wHvBYpKE+bHCjzygiaIH5hKB9QM6ATocT9W6ZydPR1/XjJ/dFtYhgs2vv1oOW8XGgA7gL+CL6un7scs7TXeQk/g90BQoyq5VhuQx/aI5qLQIeR1y70S152RjoQ18RwU7XrrqQUjZG+myniOAvrp0lAP2FVqf3SBHBHc6zbHlvikaVh4lO056UJd7kZDOCaF8mTgVudPqSkgUf3cfmnC5lwLLq4U7Pm6kEtwVts95rwGklkrO994STWXK7MYVgp87YsI49U0deX4uuEBa6XpcHh7Bq73DqBJYV/+1kVyuT+T9oUKo21en4VqSTLNCiTDnv1LFE8/1aJWMBzGIbXQ6IDHF7dmIVERysKm1y1PMfZiqBmB8eUb1gSHCGX5Mz7H7g06yRZ5WQ3PqcbDoP5tkvA/dq4i16dit2jlBGPU76RuXoQKXFwlBQi+BQYHkiuRBj9NwmWVa4N0Yjj0aXqrxFviNviYfq5uD6qCfGtkhyNJoSyHVorohcHsGqagpfh+ThOZWGs7Vnkq7TAuxUbXMFsDnqFcIlblLBPS0aFWMB8Kik6/RM0vWabYthOVnPQRXpH6subu+lPokINilc5HmVR1tQ1YXo0NMipxgkveh6xKrB35SUJiMjuCKR3IIa5ELs1VMKKgqKsxKUWRh5OJL2MyqKXUV4XgH0mKOivdIblgAP9dLfr6jkXH+FsGTg7kh6jAm2RdIeLNQF+XGFebHdVFkSanvsFN1G2Z2LXWUcXwD/AOoH0ZvMws5SAAAAAElFTkSuQmCC"/>
+                  </svg>
+                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+                    <image id="Idioma" width="41" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAFp0lEQVRYhc2Ze2hXZRjHP/7cpsvNWqLVaHSzFUJG1ioMLHWWJkUUCErtj2gZ1bpCgZVgF1dUWGShUlFaVhDSPQsrreymMcMuRitbWmlXs63mZVs87Puyx/P+zu935j/tC2Pnfd/nnPM973N9n9+gJYsfZz9RDpwATAZOBY4BRgBDgT3ADmAL8CnwDvCx5vqNkv245yTgeuAM4OhotQ+HAMcB9cDNwE/ABmAh8HokXQD9ITlOL7sAKItWi6Naf+dqZxcDz2W5MRfNxDC13gOsAWYkCH4A/OPGr0r1d7q5HmA90O7mJgLPimRN9MZ+kqwFVgI3ARWa+xt4FBgP3AeUar4VuAxYB9wGrNL8IJEfCzQD37nn20e/J5NIRSGSdcCbwAQ39xRwGtAIfCjygaTt3jYneyXQqWuz4Z3AHO10s9vZI2SjsyIGRXZyDPCGHoC88grgEuArzR0u7zb8ArySeMY3wCe6Hg5M0vXvImsq/1pz5htPpxHNR3KU1FOlsannHBm6h6lqmMZL9fIkHnbj8xJr6xUh3nVzFg/PLEZyMLAMOFLj7cDZbkcCzM4udOO1Eb1evC01G6YCBybW7cOmOKJDgCcUvlJJNoqUYS9wEfBt9GoY6VRt3t0SSfTiD6DN3XN6JAG79Z5WjW2DHkgjWaNQEzC7wA4dBlTq2gJ0WyTRi27gfTc+MZLoxW/AxUCHxmZK0/ORvFQGjpymUL6skcpxoSYNK938oSkyKG2GTTJeN4SFkHEsEzTpukeBe3Iecwjr3h4tV9c70knZav239VNIl0VOauZzgBzIHGttKDCuTdrB/4ge9xEvWhoOOzVhgBAkscsW+MtLpI4QaC0LpHlqQInUZpmmS/FudyS1LywSHKSZDUqtabCdHC1eZsPjShQWwgPME6el3BxgzrUZOFgx0OJcoZcitZ2v66sLRI2Aa4AHtav1ORWrAa2ReIwKl6/btZvF0OnWRxWRNXzvrutyqqYDNkbiMcpcVOhQFV4M3hwqi8iiTBdwVM6VYKh6LobBLjTtUmYqBi9TWkQWpctduq7KJW76NxKP4b2vW4ZeDN1uPS1GenQ6DQ3JJWwqy7HAk8rywqRclo8qdSa1N+fyJRmNutvtTFnGc5KXyWIeVcpkhh1G8k+3OCYSj7HH7f6wjDbmNdQRrcbwOX6rkfzBTdRG4jF+dd5akdG7/U5ujVZjeJItdvNHMtShCuz3R7f0oUdy5Zqp1Dm6vYB99ihDBTSpfsxXvCAtTXLjt0KBsUpVz0CDhaLR4WtWD0CChs/NcYKtrABu1RmjR8fTthQVdquLEQ5WdkBblyIb6sl5Wg9tlnyyyJTmu6z0EM6gvwSeBC7XA+wgNDd6RB92OpKW7x+LJPpwliNlBUwh2QaXAT8DXiBhvAtcKmosUg1tdtd23C2E6W5tWwG5Y9U0CB+0IIQ6T3KTFpDgMtccSGK76wGZ546MJPrgC+pN0WovSnWUrdZ4jTRLkqThbnUeUHX0fKIACfjZlXVWi54cSfRiuGsPtqvBlQ+PqLcU5K7zMkmSf+mQFbKC7dJLycO61PCyG6eRrHOl4Gp9nIdpbJEaXQFNcrBUksjtZ7jxRL0gebB/xmWbBpdrPa5yNrYisWb5+TWd7wPmSe37IB9JdPMsV1Efr/PzHEfmC6fy2kSWQDsYEkSXWnwBM+XpU93cHcDtEZMCJNFOWZj5UWPr49ylQ/yNsrd7Xel1S6KQaHbNhkVq18xUO3G5K2a6pOK5ibozE0mULqck2npj1TzdqCNn8PLxIl0h9Te6e0bo45breQEtCnULozc79OfXhwad4tKcJKCtQOgK2KIQMz/LaSBLzzxgqdoes3XWTnt4GkFTpTVgLeVa1LCWdZbjSr9/IrGMtER/doC3bGLqs66v2az1cOyZRsgIWPq0+tOcxlKcmUiW+rMPwH/Q2zCJ/n+x2QAAAABJRU5ErkJggg=="/>
+                </svg>
+                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="52" viewBox="0 0 66 52">
+                    <image id="Icono_menu" data-name="Icono menu" width="66" height="52" xlink:href="data:img/png;base64,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"/>
+                </svg> 
+                <div class="conectar align-items-center mx-2">
+                    <div class="conectar-btn">
+                        <a href="#">CONECTAR</a>
+                    </div>
+                </div>         
+            </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container-fluid section-1">
+            <div class="row r_to-height align-items-center w-100">
+            </div>
+            <div class="row r_row-1 align-items-center">
+                <div class="container-lg">
+                    <h1 class="r_gradient-heading-outline r_gradient-text text-center">nft landsmain</h1>
+                    <h1 class="r_gradient-text text-center">nft landsmain</h1>
+                </div>
+            </div>
+            <div class="row r_to-height-125 align-items-center">
+            </div>
+            <div class="row r_row-1 r_mt-150 r_mt-150-res align-items-center w-100">
+                <div class="col-lg-5 r_gradient-subtitle align-middle text-center mx-auto">
+                    <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                        herramientas de la plataforma
+                    </h3>
+                </div>
+            </div>
+            <div class="row r_row-2">
+                <div class="row r_px-5-res px-5 r_mt-50 d-flex">
+                    <div class="col-lg-6 r_px-1-res-col">
+                        <p class="font-weight-bold">
+                            No necesitaremos ser eruditos en programación, tener un master en tecnología o saber de codificación criptografica para llevar a cabo nuestro proyecto en realidad virtual, cualquier usuario, emprendedor, tienda o empresa puede construir, edificar en 3D y lanzar cualquier negocio de comercio electrónico o idea en pocos pasos usando la tecnología NFT y blockchain de manera fácil, interactiva e intuitiva, pudiendo inclusive fusionar y alojar su trabajo en VR en su propio dominio web. “The Mainland” ofrecerá una plataforma completa basada en SDK y MCMS, que permitirá el desarrollo constante y escalable no solo del Mutiverso, sino también de cada usuario, desarrollador, programador, artista o diseñador que forme parte del futuro del proyecto. 
+                        </p>
+                    </div>
+                    <div class="col-lg-6 r_px-1-res-col">
+                        <p class="font-weight-bold">
+                            Para los desarrolladores, esta será la oportunidad de monetizar nuestras ideas y a su vez contribuir a la expansión de este multiverso descentralizado, a través de lo que hemos bautizado como el protocolo “DPIP” (Decentralized Programming and Incentive Protocol, o en español, Protocolo de Programación e Incentivo Descentralizado), en el cual seremos recompensados con el token $MAIN por nuestras aportaciones y trabajo, en la mejora de la experiencia del usuario y la usabilidad en la plataforma. Esto lo podremos realizar por medio del desarrollo de nuevos assets, herramientas, software o proyectos propios o de carácter social. Estas son las herramientas que se desarrollarán para completar el kit de experiencia de la plataforma:
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid section-2">
+            <div class="row r_px-5-res  pb-5 w-100">
+                <div class="col-lg-4 align-self-center p-0 r_order-1">
+                    <img class="r_img-75 cropped1" src="./Media/page-2/Marketplace1.png" alt="Generic placeholder image">
+                </div>
+                <div class="col-lg-8 r_px-1-res-col align-self-center r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <div class="row px-5 r_px-5-res align-items-center pb-3 w-100">
+                                <div class="col-lg-12 mx-auto align-middle">
+                                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                                            main marketplace
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="font-weight-bold r_px-2">Un mercado de comercio electrónico descentralizado dividido en dos secciones. La primera es para la creación y comercialización de NFTs y Cajas Misteriosas, con el potencial de acuñar un activo digital que representará un elemento tangible que podremos cambiar en el mundo real o intangible para que podamos utilizarlo en el Multiverso. El segundo es el mercado de construcción VR o DPIP, que permitirá a los creadores más destacados, comercializar sus contenidos, diseños, herramientas, assets y objetos listos en realidad virtual de alta calidad para ser usados por los usuarios u otros desarrolladores en la construcción de sus proyectos inmobiliarios virtuales en “The Mainland”. Igualmente habrá un espacio para que los diseñadores de esos contenidos creen un perfil profesional para ofrecer sus servicios como creativos a los usuarios en general.
+                                <br><br>Nuestro enfoque principal es ser pioneros en crear una plataforma digital intuitiva y perfectamente diseñada para reunir no solo a los entusiastas de las criptomonedas sino al público que aún no ha interactuado con ellas. Un mercado llamativo donde podremos crear, vender, comprar, alquilar, subastar y enviar como regalos NFTs, cajas misteriosas, avatares para publicidad, assets de utilidad, entradas a eventos, parques y/o conciertos, paquetes de viajes, cupones de descuento, y un sin de elementos conceptualizados que podremos usar en el Multiverso y la vida real, para que podamos rentabilizar su valor de manera escalable, convirtiéndolo en algo apreciable, coleccionable, intercambiable o utilizable.
+                               <br><br><span class="r_gold">La plataforma no cobra por publicación o acuñación de NFTs, solo cobrará una comisión del 3% por cada venta realizada. La redistribución de fondos de la venta se hará de la siguiente manera: 1% para la tesorería de MainDAO, 1% entre todos los poseedores de NFTs LandsMain y 1% para la recompra y quema del token $MAIN.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row r_px-5-res m-0 pb-5 w-100">
+                <div class="col-lg-8 r_pl-2 r_px-1-res-col align-self-center r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <div class="row px-5 r_px-5-res align-items-center pb-3 w-100">
+                                <div class="col-lg-12 mx-auto align-middle">
+                                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                                            main marketplace
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="font-weight-bold r_px-2">
+                                Debido a que nuestro Multiverso se expone a los cinco sectores económicos, el alcance es increiblemente grande y diverso. Por ende, muchos desarrolladores querrán incluir sus proyectos e ideas en “The Mainland” y necesitarán ayuda para recaudar capital. Ahí entrara en juego nuestra plataforma de lanzamiento de Tokens o NFTs descentralizada, que beneficiara no solo a los creadores de la idea, sino a toda la comunidad poseedora del token $MAIN e inversores aliados, permitiéndoles ser los primeros en invertir en la ronda pre-semilla para rentabilizar su inversión.
+                                <br><br>Cada propuesta de proyectos, pasará por un riguroso proceso de investigación, que garantizará su legitimidad. A continuacion será analizado por la comunidad a través de la MainDAO, que tendrá que dar su aprobación final mediante un proceso de votación. De ser aprobado, se iniciará el proceso con marketing y asesoramiento profesional para que lleve su proyecto hacia otras Lauchpads aliadas donde ofertarán la ronda de semilla, preventa o IDO para un crecimiento sólido.
+                                <br><br><span class="r_gold">La plataforma retendrá el 5% de lo recaudado, lo cual será redistribuido de la siguiente forma: un 2% para la pool de recompensa a los titulares que apostaron sus tokens $MAIN durante el periodo de bloqueo, 2% para el departamento de marketing y seguridad para su continuo desarrollo y el 1% para la recompra y quema del token $MAIN.</span>
+                                <br><br>Habrá oportunidades para todos los holders que apuesten. Sólo van a existir tres niveles (Tier) para participar, así que todos tendremos garantizado un lugar de asignación. Nada de correr para ser los primeros (FCFS, Primero llegado, primero servido), o poseer cantidades infinitas de tokens, la distribución será justa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 align-self-center p-0 r_order-1">
+                    <img class="r_img-75 cropped1" src="./Media/page-2/Launchpad.png" alt="Generic placeholder image">
+                </div>
+            </div>
+                <div class="row w-100 justify-content-center">
+                    <img src="./Media/Compressed Media/fLECHA ARRIBA.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid section-3">
+            <div class="row r_px-5-res  pb-5 w-100">
+                <div class="col-lg-4 align-self-center p-0 r_order-1">
+                    <img class="r_img-75 cropped1" src="./Media/page-2/Capxxza 1011.png" alt="Generic placeholder image">
+                </div>
+                <div class="col-lg-8 r_px-1-res-col align-self-center r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <div class="row px-5 r_px-5-res align-items-center pb-3 w-100">
+                                <div class="col-lg-12 mx-auto align-middle">
+                                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                                            main dex
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="font-weight-bold r_px-2">Un exchange integrado y descentralizado dentro de la plataforma, que nos permite intercambiar nuestros activos digitales sin tener que crear una cuenta o pasar por un procedimiento KYC. Para el comercio de bienes y servicios en los negocios creados en sus Landsmain, se integrará una pasarela de pago virtual que combinará el intercambio P2P a través de nuestras wallets descentralizadas (como por ejemplo Metamask) con una pasarela de pago tradicional (fiat) con tarjetas de débito, crédito u otros monederos.
+
+                                <br><br>Existirán ATMV (cajeros automáticos virtuales) distribuidos por todo el multiverso, que nos permitirán el intercambio de dinero fiduciario por el token $MAIN a través de una pasarela de pago. Podremos ganar tokens $MAIN dejando nuestros tokens bloqueados con excelentes rendimientos o hacer Yield Farm (yield farming) agregando Liquidez (LP) para ganar más tokens $MAIN con un APR (tasa de porcentaje anual) más alto.
+                                
+                                <br><br><span class="r_gold">La plataforma cobra 0.20% por cada transacción que se realiza. El 0.10% del total está destinado a ser distribuido entre los poseedores de NFTs LandsMain, el 0.05% a la tesorería de MainDAO y el 0.05% se utiliza para la recompra y quema del token $MAIN. En el caso de pagos por la pasarela de pago tradicional la comisión sobre la venta efectiva es del 3% + 0,3$ por transacción.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row r_px-5-res m-0 pb-5 w-100">
+                <div class="col-lg-8 r_pl-2 r_px-1-res-col align-self-center r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <div class="row px-5 r_px-5-res align-items-center pb-3 w-100">
+                                <div class="col-lg-12 mx-auto align-middle">
+                                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                                            main dao
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="font-weight-bold r_px-2">
+                                Las DAOs, al igual que casi todo lo relacionado con la Blockchain, son una tecnología en evolución, siendo a veces difícil de entender para la mayoría. En el caso de las DAOs aún siguen tomando forma sus reglas debido a su innovación. “The Mainland” es un proyecto de código abierto bastante ambicioso que necesitará un gran trabajo, no solo de nuestro equipo fundador y creador, sino también de una nueva y gran comunidad, que es la que construirá este nuevo mundo para el beneficio de todos.
+
+                                <br><br>En definitiva, sabemos que también podemos evolucionar e innovar en el sistema de implementación, compromiso e incentivo de nuestras DAOs progresivamente en conjunto, a medida que seguimos avanzando, mientras vamos educándonos como una nueva comunidad para ir estableciendo las normas, procesos y reglas que se implantarán para que todo funcione después de forma automatizada, descentralizada y perfectamente estructurada, haciendo uso de los smart contracts y la tecnología blockchain para brindar transparencia, inmutabilidad, autonomía, automatización y seguridad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 align-self-center p-0 r_order-1">
+                    <img class="r_img-75 cropped1" src="./Media/page-2/DAO.png" alt="Generic placeholder image">
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center">
+                <img src="./Media/Compressed Media/fLECHA ARRIBA.webp" alt="">
+            </div>
+        </div>
+        <div class="container-fluid section-4">
+            <div class="row r_px-5-res  pb-5 w-100">
+                <div class="col-lg-4 align-self-center p-0 r_order-1">
+                    <img class="r_img-75 cropped1" src="./Media/page-2/Marketingll.png" alt="Generic placeholder image">
+                </div>
+                <div class="col-lg-8 r_px-1-res-col align-self-center r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <div class="row px-5 r_px-5-res align-items-center pb-3 w-100">
+                                <div class="col-lg-12 mx-auto align-middle">
+                                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                                            main marketing
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="font-weight-bold r_px-2">
+                                En la gran metrópolis de Main Capital, habrá innumerables espacios dedicados para el marketing y la publicidad virtual. Estos espacios estarán a disposición de todos (dueños de NFTs MainLands, visitantes o empresas externas) a través de un sistema semi-automatizado, dirigido por el departamento de Marketing Virtual de “The Mainland”, compuestos por vallas publicitarias, pantallas audio visuales, publicidad móvil, ropa para avatares, presencia en eventos públicos, etc. 
+
+                                <br><br>Este departamento también estará encargado del desarrollo de la DApp DailyMain, la aplicación social “The Mainland”, que nos mantendrá al día de lo que ocurre en el multiverso y permitirá el intercambio y publicación de mensajes de texto, videos, notas de voz y fotos. También funcionara como centro de noticias y eventos, donde podremos seguir a nuestras empresas, juegos, actividades y amigos favoritos en “The Mainland”.
+
+                                <br><br>Esta pieza formará una parte importante dentro de la economía del proyecto. <span class="r_gold">El cobro de estas actividades será redistribuido de la siguiente manera: 40% entre los poseedores de NFTs Mainlands, 20% para el departamento de Marketing Virtual para su continuo desarrollo, 20% para la recompra y quema del token $MAIN, y 20% para el fondo de la Fundación Mainland.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row r_px-5-res m-0 pb-5 w-100">
+                <div class="col-lg-8 r_pl-2 r_px-1-res-col align-self-center r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <div class="row px-5 r_px-5-res align-items-center pb-3 w-100">
+                                <div class="col-lg-12 mx-auto align-middle">
+                                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                                            main builder tools
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="font-weight-bold r_px-2">
+                                Es la aplicación de código abierto de construcción basada en la web The Mainland, que nos permitirá dar rienda suelta a la imaginación. Será la herramienta de interfaz de ingeniería adecuada para el fácil manejo que nos enseñará a diseñar nuestra propia presencia virtual en 3D dentro del Multiverso. Esto implica poder dar forma a nuestras ideas para construir a gusto de cada uno nuestro propio local, casa, edificio e incluso ciudades enteras.
+
+                                <br><br>Las herramientas están diseñadas de tal forma que aunque seamos principiantes no tengamos que preocuparnos de no entender de construcción o diseño en 3D. Tendremos a nuestra disposición múltiples plantillas con diseños de todo tipo listos para importar de forma gratuita. Esto nos permitirá dar el primer paso e ir personalizando poco a poco nuestro espacio, ya sea exterior o interior, acorde a la visión, al concepto y a la creatividad de nuestro proyecto.  Para personalizar nuestros espacios podremos navegar por el Main Marketplace de construcción en VR, lo que será una gran experiencia que podríamos comparar como ir de compras a una gran ferretería o tienda departamental para adquirir lo que deseemos o necesitemos. Allí podremos encontrar objetos de alta calidad listos para ser usados y probados. Parte de estos complementos son publicados por nuestro team creador, el resto serán publicaciones de la comunidad de diseñadores, artistas y desarrolladores de todo el mundo. Igualmente, para los más profesionales, o para esos proyectos de alta ingeniería que se desarrollaran en las LandsMain Empresariales, Obras o City, la plataforma nos permitirá importar trabajos finalizados desde programas profesionales como AutoCAD. Una vez importados, los proyectos desarrollados en las LandsMain Obras y/o City podrán ser divididos con nuestras herramientas de construcción NFT, para ser convertidos en NFTs LandsMain Proyecto independientes, las cuales podremos comercializar en el Marketplace.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 align-self-center p-0 r_order-1">
+                    <img class="r_img-75 cropped1" src="./Media/page-2/Builder toolszz.png" alt="Generic placeholder image">
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center">
+                <img src="./Media/Compressed Media/fLECHA ARRIBA.webp" alt="">
+            </div>
+        </div>
+        <div class="container-fluid section-5">
+            <div class="row r_px-5-res  pb-5 w-100">
+                <div class="col-lg-4 align-self-center p-0 r_order-1">
+                    <img class="r_img-75 cropped1" src="./Media/page-2/avatzxar.png" alt="Generic placeholder image">
+                </div>
+                <div class="col-lg-8 r_px-1-res-col align-self-center r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <div class="row px-5 r_px-5-res align-items-center pb-3 w-100">
+                                <div class="col-lg-12 mx-auto align-middle">
+                                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                                            main avatar
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="font-weight-bold r_px-2">
+                                La identidad personal o Self (traducido al castellano como “uno mismo”) como se le conoce en los últimos tiempos, es de los aspectos más importantes de nuestra vida como humanos, es un conjunto de rasgos que nos diferencian de los demás y nos hacen identificables. Somos seres biopsicosociales, es decir un cuerpo y una psique que se interrelacionan socialmente en un contexto histórico social determinado.
+
+                                <br><br>Las nuevas tecnologías empleadas para crear el software de “Main Avatar” nos abre una nueva posibilidad de identidad virtual, para ser un nosotros mismos, pero con el poder de personalizar el quien somos en el aspecto físico virtual, lo que también nos dará una nueva libertad en el quien somos en el aspecto social. Crear nuestro Avatar será totalmente “gratis”.
+                                Los avatares son una pieza fundamental para la identificación, socialización y uso en el multiverso “The Mainland”, por lo que no es solo un perfil digital virtual de nosotros mismos como un personaje, representa la identidad del quien somos en una vida virtual paralela a la real, para que tenga una utilidad comercial y de interacción social de construcción continua que pueda ser mejorada en el tiempo y que a diferencia de nuestra vida real pueda quedar inmortalizada para siempre en el Multiverso vinculado con las experiencias vividas dentro del mismo.
+
+                                <br><br>Con “Main Avatar” podremos personalizar cada avatar de manera realista con características humanas idénticas a uno mismo con nuestro propio rostro y cuerpo, dándole rasgos, atributos y un diseño totalmente único, pudiendo emparejar nuestra creación con la tecnología de Main Bots IA. También podremos personalizar el avatar a diario con cambios de accesorios, ropa, zapatos, peinados, entre otros. Incluso los usuarios con imaginación más fantasiosa pueden, a través de herramientas dispuestas en su panel de control, vestir sus avatares con disfraces de animales, guerreros, personajes de ciencia ficción, personajes de juegos, o ropa especial de promociones digitales dispuestas por patrocinadores y/o anunciantes de la plataforma.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row r_px-5-res m-0 pb-5 w-100">
+                <div class="col-lg-8 r_pl-2 r_px-1-res-col align-self-center r_order-2">
+                    <div class="media">
+                        <div class="media-body">
+                            <div class="row px-5 r_px-5-res align-items-center pb-3 w-100">
+                                <div class="col-lg-12 mx-auto align-middle">
+                                    <div class="r_gradient-subtitle align-middle text-center mx-auto">
+                                        <h3 class="r_gradient-subtitle-text m-0 pt-1">
+                                            main bots ia
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="font-weight-bold r_px-2">
+                                Construir y dar forma real a nuestra idea de negocio es genial, pero si no hay atención o alguien que nos atienda dentro del negocio para dar información será igual a un espacio vacío bonito. Recuerda que el multiverso “The Mainland” jamás duerme, está abierto los 365 días del año, las 24 horas del día.
+
+                                <br><br>Por ello creamos Main Bots IA, un servicio especializado que permite crear avatares personalizados para prestar servicios al cliente, que nos ayudarán a automatizar la atención y gestión de los productos o servicios que ofrezcan. Un Main Bot IA es un software configurable que aplica inteligencia artificial para realizar tareas por su cuenta sin la intervención humana, utilizando algoritmos de aprendizaje profundo que le permiten aprender de todo, integrando la capacidad de reconocimiento de voz e interpretar o leer contenido escrito y transformarlo en voz en múltiples idiomas, mientras realizan operaciones de atención, por lo que podrán simular una conversación con la gente para responder consultas.
+
+                                <br><br>Desplegaremos MainBots IA por todo el continente, que funcionarán como los servidores públicos de ayuda para cualquier persona que nos visite.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 align-self-center p-0 r_order-1">
+                    <img class="r_img-75 cropped1" src="./Media/page-2/Botsas.png" alt="Generic placeholder image">
+                </div>
+            </div>
+            <div class="row w-100 justify-content-center">
+                <img src="./Media/Compressed Media/fLECHA ARRIBA.webp" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fuild footer-bg">
+            <div class="row footer-row px-5 r_px-5-res align-items-center justify-content-around pb-5 w-100">
+                <div class="col-lg-3 r_footer-w50 mx-auto align-middle r_border-right">
+                    <div class="footer-logo text-center">
+                        <img class="footer-img" src="./Media/Logo completo.png" alt="">
+                        <p class="text-center r_pstyle mt-2">conectando El comercio<br>
+                            y el multiverso en un solo lugar</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto r_border-right align-middle">
+                    <ul class="footer-menu m-2">
+                        <li><a href="">la plataforma</a></li>
+                        <li><a href="">marketplace</a></li>
+                        <li><a href="">maindao</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">main launchpad</a></li>
+                        <li><a href="">main dex</a></li>
+                        <li><a href="">main bots ia</a></li>
+                        <li><a href="">main avatar</a></li>
+                        <li><a href="">main marketing</a></li>
+                        <li><a href="">Contactanos</a></li>
+                        <li><a href="">nft landsmain</a></li>
+                        <li><a href="">token $main</a></li>
+                        <li><a href="">construir tu negocio</a></li>
+                        <li><a href="">fundacion mainland</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto r_border-right align-middle">
+                    <ul class="footer-menu m-2">
+                        <li><a href="">Ayuda / FAQ</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                        <li><a href="">descargo de responsabilidad</a></li>
+                        <li><a href="">guia / documentacion</a></li>
+                        <li><a href="">sdk / mcms</a></li>
+                        <li><a href="">auditorias</a></li>
+                        <li><a href="">programadores / desarrolladores</a></li>
+                        <li><a href="">trabaja con nosotros</a></li>
+                        <li><a href="">programa de recompensas</a></li>
+                        <li><a href="">bug bountry</a></li>
+                        <li><a href="">team main</a></li>
+                        <li><a href="">whitepaper</a></li>
+                        <li><a href="">roadmap</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto align-middle">
+                    <img class="footer-social-img" src="./Media/Redes sociales.png" alt="">
+                    <form action="">
+                        <div class="form-group text-center align-items-center justify-content-around">
+                            <input type="email" class="form-control r_field mt-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email">
+                            <button type="submit" class="btn r_subs-btn-footer mt-2">Submit</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-bg">
+            <div class="copyright-row align-self-center text-center">
+                <p class="mb-0">© 2021 <b>The Mainland –  All Rights Reserved by the MainDAO<b></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3bc0c44d7a.js" crossorigin="anonymous"></script>
+</body>
+</html>
