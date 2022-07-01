@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style-5.css">
+</head>
+<body>
+    <header class="container-fluid align-items-center pt-3">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">LA<br>
+                    PLATAFORMA <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">MARKETPLACE</a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">MAINDAO</a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" href="#">BLOG</a>
+                </li>
+              </ul>
+              <div class="menu-icons align-items-center d-flex justify-content-between">
+                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="41" viewBox="0 0 40 41">
+                    <image id="Buscar" width="40" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAEX0lEQVRYhcWYa4hVVRTHf95mnKK5TmqpmTFhaAWVlBmhSGX2ELUPmUQm1peelET0pPoWPcYeVOaLsBc+0ZJCkHA+BA0VJfZSeyBEBkEJpjJOajmxmv+h7drnztl3OqN/ONyz195n7f9de6+119oDli1dTkloAM4BJgOXAqOBk4FuYC+wE/gc+Ejv3SnTNkSS+tEMzAfmiGAtnVOBO4Eu4AdgJfCq2jVRS1kq7gPuAc6t45uTgHF67E+9CLwdjRIqkSQNI4ENwCt1kvMwkm8Ba4ERUW8fLXihFNpy5uFP7bVdwEEZwfbi6cDFsqDHbOAs4Gbtzz4TPBvYpMk8tsiq64Dvot4ejAHmAbOA81zfBOBdYCbwcyasZ4ntn6/OIWcWewqYqN+M3BBgLHC+rG1L+CPwpCz5AnDI6bLVWRUaLpWgjXsJuMTJfwWu06Q2WSNwLbAG2A58A3wJfA18D2wFHtS39nsDsMfpzP7ov0iNgzOAD5ysE5gEfKX2RcAi4LLo6xjmtbdKepW2RnMw6pD0bU+xoI15IJL2TJCRm6MAnEIOBfNsGduBO1z/QKCNRCe5HLjSyWwvrte7ed4bUpphv/bSh8DvWvrxwFygqvj5VzDexk4HbglkU4DWFIJTXHsf8IjezQkWO3LvAM8AO9x37drHRvZANEvPqWIrMUBtc8p5RUvcoP0X4pMgDJgntgR9zyqMeHIZDtcgZ/hMFg8xrYignRIXONkK/bbqfM3wHvBYpKE+bHCjzygiaIH5hKB9QM6ATocT9W6ZydPR1/XjJ/dFtYhgs2vv1oOW8XGgA7gL+CL6un7scs7TXeQk/g90BQoyq5VhuQx/aI5qLQIeR1y70S152RjoQ18RwU7XrrqQUjZG+myniOAvrp0lAP2FVqf3SBHBHc6zbHlvikaVh4lO056UJd7kZDOCaF8mTgVudPqSkgUf3cfmnC5lwLLq4U7Pm6kEtwVts95rwGklkrO994STWXK7MYVgp87YsI49U0deX4uuEBa6XpcHh7Bq73DqBJYV/+1kVyuT+T9oUKo21en4VqSTLNCiTDnv1LFE8/1aJWMBzGIbXQ6IDHF7dmIVERysKm1y1PMfZiqBmB8eUb1gSHCGX5Mz7H7g06yRZ5WQ3PqcbDoP5tkvA/dq4i16dit2jlBGPU76RuXoQKXFwlBQi+BQYHkiuRBj9NwmWVa4N0Yjj0aXqrxFviNviYfq5uD6qCfGtkhyNJoSyHVorohcHsGqagpfh+ThOZWGs7Vnkq7TAuxUbXMFsDnqFcIlblLBPS0aFWMB8Kik6/RM0vWabYthOVnPQRXpH6subu+lPokINilc5HmVR1tQ1YXo0NMipxgkveh6xKrB35SUJiMjuCKR3IIa5ELs1VMKKgqKsxKUWRh5OJL2MyqKXUV4XgH0mKOivdIblgAP9dLfr6jkXH+FsGTg7kh6jAm2RdIeLNQF+XGFebHdVFkSanvsFN1G2Z2LXWUcXwD/AOoH0ZvMws5SAAAAAElFTkSuQmCC"/>
+                  </svg>
+                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41">
+                    <image id="Idioma" width="41" height="41" xlink:href="data:img/png;base64,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"/>
+                </svg>
+                <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="52" viewBox="0 0 66 52">
+                    <image id="Icono_menu" data-name="Icono menu" width="66" height="52" xlink:href="data:img/png;base64,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"/>
+                </svg> 
+                <div class="conectar align-items-center mx-2">
+                    <div class="conectar-btn">
+                        <a href="#">CONECTAR</a>
+                    </div>
+                </div>         
+            </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container-fluid section-1">
+            <div class="row r_to-height align-items-center w-100">
+            </div>
+            <div class="row r_row-1 align-items-center">
+                <div class="container-lg">
+                    <h1 class="r_gradient-heading-outline r_gradient-text text-center">EL marketplace<br>
+                        interactivo del multiverso</h1>
+                    <h1 class="r_gradient-text text-center">EL marketplace<br>
+                        interactivo del multiverso</h1>
+                </div>
+            </div>
+            <div class="row r_to-height-125 align-items-center">
+            </div>
+            <div class="row r_row-1 r_mt-150 r_mt-150-res align-items-center w-100">
+                <div class="col-lg-5 align-middle text-center mx-auto">
+                </div>
+            </div>
+            <div class="row r_row-2 r_min-height">
+                <div class="row r_px-5-res justify-content-around text-center mx-auto px-5 r_mt-50 d-flex">
+                    <div class="col-lg-8 r_px-1-res-col">
+                        <p class="font-weight-bold r_navy">Aquí podrás comprar, vender, alquilar, subastar, intercambiar y crear todo lo que imagines en productos, servicios o assets para construir tu establecimiento virtual comercial, todo en formato NFT, para conectarlo con tu espacio o negocio para disfrutar de una experiencia de comercio interactiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fuild footer-bg">
+            <div class="row footer-row px-5 r_px-5-res align-items-center justify-content-around pb-5 w-100">
+                <div class="col-lg-3 r_footer-w50 mx-auto align-middle r_border-right">
+                    <div class="footer-logo text-center">
+                        <img class="footer-img" src="./Media/Logo completo.png" alt="">
+                        <p class="text-center r_pstyle mt-2">conectando El comercio<br>
+                            y el multiverso en un solo lugar</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto r_border-right align-middle">
+                    <ul class="footer-menu m-2">
+                        <li><a href="">la plataforma</a></li>
+                        <li><a href="">marketplace</a></li>
+                        <li><a href="">maindao</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">main launchpad</a></li>
+                        <li><a href="">main dex</a></li>
+                        <li><a href="">main bots ia</a></li>
+                        <li><a href="">main avatar</a></li>
+                        <li><a href="">main marketing</a></li>
+                        <li><a href="">Contactanos</a></li>
+                        <li><a href="">nft landsmain</a></li>
+                        <li><a href="">token $main</a></li>
+                        <li><a href="">construir tu negocio</a></li>
+                        <li><a href="">fundacion mainland</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto r_border-right align-middle">
+                    <ul class="footer-menu m-2">
+                        <li><a href="">Ayuda / FAQ</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                        <li><a href="">descargo de responsabilidad</a></li>
+                        <li><a href="">guia / documentacion</a></li>
+                        <li><a href="">sdk / mcms</a></li>
+                        <li><a href="">auditorias</a></li>
+                        <li><a href="">programadores / desarrolladores</a></li>
+                        <li><a href="">trabaja con nosotros</a></li>
+                        <li><a href="">programa de recompensas</a></li>
+                        <li><a href="">bug bountry</a></li>
+                        <li><a href="">team main</a></li>
+                        <li><a href="">whitepaper</a></li>
+                        <li><a href="">roadmap</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto align-middle">
+                    <img class="footer-social-img" src="./Media/Redes sociales.png" alt="">
+                    <form action="">
+                        <div class="form-group text-center align-items-center justify-content-around">
+                            <input type="email" class="form-control r_field mt-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribe tu email">
+                            <button type="submit" class="btn r_subs-btn-footer mt-2">Submit</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-bg">
+            <div class="copyright-row align-self-center text-center">
+                <p class="mb-0">© 2021 <b>The Mainland –  All Rights Reserved by the MainDAO<b></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3bc0c44d7a.js" crossorigin="anonymous"></script>
+</body>
+</html>
