@@ -445,6 +445,9 @@ header{
 .r_btn-form:hover{
     color: #00000000;
 }
+.r_footer-icon{
+    width: 100%;
+}
 /*section 8 END*/ 
 
 @media screen and (max-width: 1024px) {
