@@ -43,7 +43,7 @@ header{
     font-size: 26px;
 }
 .section-1{
-    background-image: url(./Media/page-3/Separador.png);
+    background-image: url(./Media/page-4/Separador.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
@@ -207,6 +207,9 @@ header{
 }
 .r_purple{
     color:#742cb9;
+}
+.r_navy{
+    color: #041b33;
 }
 .r_subheading{
     color: #fff;
@@ -393,7 +396,7 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 25px 0;
+    padding: 70px 0;
 }
 .r_cropimg-2{
     width: 100%;
@@ -401,54 +404,11 @@ header{
 .r_cropimg{
     width: 120%;
 }
-.su-email{
-    height: calc(30px + .75rem + 2px)!important;
-    background-image: url(./Media/page-3/correo.png);
-    background-repeat: no-repeat;
-    background-size: 85px;
-    background-position: -20px -16px;
-    opacity: 0.7;
-    padding-left: 45px;
-    border: 1px solid #9ca7b1;
-    border-radius: 0px;
-}
-.monto-en{
-    height: calc(30px + .75rem + 2px)!important;
-    background-image: url(./Media/page-3/$$$.png);
-    background-repeat: no-repeat;
-    background-size: 85px;
-    background-position: -20px -25px;
-    opacity: 0.7;
-    padding-left: 45px;
-    border: 1px solid #9ca7b1;
-    border-radius: 0px;
-}
-.r_field-subs-trans::placeholder{
-    font-weight: bold;
-    color: #606b78;
-    text-align: left;
-}
-.r_btn-form{
-    text-align: center;
-}
-.r_btn-form{
-    background-image: url(./Media/page-3/BOTON\ ENVIAR.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 10px 75px;
-    height: 41px;
-    color: #00000000;
-    margin-left: -5px;
-    margin-top: -4px; 
-}
-.r_btn-form:hover{
-    color: #00000000;
-}
-.r_footer-icon{
-    width: 100%;
-}
 /*section 8 END*/ 
+
+.r_min-height{
+    min-height: 350px;
+}
 
 @media screen and (max-width: 1024px) {
     .r_gradient-subtitle{
@@ -472,44 +432,8 @@ header{
     .r_img-75 {
         margin-top: 70px;
     }
-    .form-bg {
-        background-size: 490px;
+    
     }
-    .form-label-subs{
-        margin: 0!important;
-    }
-    .su-email{
-        height: calc(20px + .75rem + 2px)!important;
-        background-image: url(./Media/page-3/correo.png);
-        background-repeat: no-repeat;
-        background-size: 75px;
-        background-position: -15px -18px;
-        opacity: 0.7;
-        padding-left: 45px;
-        border: 1px solid #9ca7b1;
-        border-radius: 0px;
-    }
-    .monto-en{
-        height: calc(20px + .75rem + 2px)!important;
-        background-image: url(./Media/page-3/$$$.png);
-        background-repeat: no-repeat;
-        background-size: 70px;
-        background-position: -15px -22px;
-        opacity: 0.7;
-        padding-left: 45px;
-        border: 1px solid #9ca7b1;
-        border-radius: 0px;
-    }
-    .r_img-75 {
-        margin-top: 0px;
-    }
-    .r_pr-0{
-        padding-right: 0!important;
-    }
-    .form-bg {
-        background-size: 615px;
-    }
-}
 @media screen and (max-width: 768px) {
     .r_mt-150-res{
         margin-top: 190px;
@@ -604,14 +528,8 @@ header{
     .r_cropimg{
         width: 40%;
     }
-    .r_col-lg-10{
-        width: 55%;
-    }
-    .form-bg {
-        background-size: 670px;
-    }
-    .r_pl-2 {
-        padding-left: 2rem!important;
+    .r_min-height {
+        min-height: 650px;
     }
 }
 @media screen and (max-width: 430px) {
@@ -715,10 +633,9 @@ header{
     .r_cropimg{
         width: 60%;
     }
-    .r_pr-0{
-        padding-right: 0!important;
+    .r_gradient-text{
+        font-size: 32px!important;
+        overflow-x: hidden;
     }
-    .r_col-lg-10 {
-        width: 95%;
-    }
+    
 }
