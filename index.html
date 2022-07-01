@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Slick Slider  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="container-fluid align-items-center pt-3">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand logo" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="#">LA<br>
+                            PLATAFORMA <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="#">MARKETPLACE</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="#">MAINDAO</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                </ul>
+                <div class="menu-icons align-items-center d-flex justify-content-between">
+                    <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="40" height="41" viewBox="0 0 40 41">
+                        <image id="Buscar" width="40" height="41"
+                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAYAAABHomvIAAAEX0lEQVRYhcWYa4hVVRTHf95mnKK5TmqpmTFhaAWVlBmhSGX2ELUPmUQm1peelET0pPoWPcYeVOaLsBc+0ZJCkHA+BA0VJfZSeyBEBkEJpjJOajmxmv+h7drnztl3OqN/ONyz195n7f9de6+119oDli1dTkloAM4BJgOXAqOBk4FuYC+wE/gc+Ejv3SnTNkSS+tEMzAfmiGAtnVOBO4Eu4AdgJfCq2jVRS1kq7gPuAc6t45uTgHF67E+9CLwdjRIqkSQNI4ENwCt1kvMwkm8Ba4ERUW8fLXihFNpy5uFP7bVdwEEZwfbi6cDFsqDHbOAs4Gbtzz4TPBvYpMk8tsiq64Dvot4ejAHmAbOA81zfBOBdYCbwcyasZ4ntn6/OIWcWewqYqN+M3BBgLHC+rG1L+CPwpCz5AnDI6bLVWRUaLpWgjXsJuMTJfwWu06Q2WSNwLbAG2A58A3wJfA18D2wFHtS39nsDsMfpzP7ov0iNgzOAD5ysE5gEfKX2RcAi4LLo6xjmtbdKepW2RnMw6pD0bU+xoI15IJL2TJCRm6MAnEIOBfNsGduBO1z/QKCNRCe5HLjSyWwvrte7ed4bUpphv/bSh8DvWvrxwFygqvj5VzDexk4HbglkU4DWFIJTXHsf8IjezQkWO3LvAM8AO9x37drHRvZANEvPqWIrMUBtc8p5RUvcoP0X4pMgDJgntgR9zyqMeHIZDtcgZ/hMFg8xrYignRIXONkK/bbqfM3wHvBYpKE+bHCjzygiaIH5hKB9QM6ATocT9W6ZydPR1/XjJ/dFtYhgs2vv1oOW8XGgA7gL+CL6un7scs7TXeQk/g90BQoyq5VhuQx/aI5qLQIeR1y70S152RjoQ18RwU7XrrqQUjZG+myniOAvrp0lAP2FVqf3SBHBHc6zbHlvikaVh4lO056UJd7kZDOCaF8mTgVudPqSkgUf3cfmnC5lwLLq4U7Pm6kEtwVts95rwGklkrO994STWXK7MYVgp87YsI49U0deX4uuEBa6XpcHh7Bq73DqBJYV/+1kVyuT+T9oUKo21en4VqSTLNCiTDnv1LFE8/1aJWMBzGIbXQ6IDHF7dmIVERysKm1y1PMfZiqBmB8eUb1gSHCGX5Mz7H7g06yRZ5WQ3PqcbDoP5tkvA/dq4i16dit2jlBGPU76RuXoQKXFwlBQi+BQYHkiuRBj9NwmWVa4N0Yjj0aXqrxFviNviYfq5uD6qCfGtkhyNJoSyHVorohcHsGqagpfh+ThOZWGs7Vnkq7TAuxUbXMFsDnqFcIlblLBPS0aFWMB8Kik6/RM0vWabYthOVnPQRXpH6subu+lPokINilc5HmVR1tQ1YXo0NMipxgkveh6xKrB35SUJiMjuCKR3IIa5ELs1VMKKgqKsxKUWRh5OJL2MyqKXUV4XgH0mKOivdIblgAP9dLfr6jkXH+FsGTg7kh6jAm2RdIeLNQF+XGFebHdVFkSanvsFN1G2Z2LXWUcXwD/AOoH0ZvMws5SAAAAAElFTkSuQmCC" />
+                    </svg>
+                    <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="41" height="41" viewBox="0 0 41 41">
+                        <image id="Idioma" width="41" height="41"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="66" height="52" viewBox="0 0 66 52">
+                        <image id="Icono_menu" data-name="Icono menu" width="66" height="52"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <div class="conectar align-items-center mx-2">
+                        <div class="conectar-btn">
+                            <a href="#">CONECTAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- section 1  -->
+    <section class="section-1">
+        <div class="container-flex">
+            <div class="row">
+                <div class="col-lg-6 hand">
+
+                    <img src="./Media/home/cityinhand.png" alt="" class="img-fluid">
+                    <div class="text-left">
+                        <h1>La herramientA</h1>
+                        <p>para crear tu propio
+                            multiverso comercial
+                            con presencia en
+                            realidad virtual</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form class="relative d-flex flex-column justify-content-end u-fade-type-right js-window-trigger">
+                        <div class="d-flex align-items-center flex-column inner">
+                            <!-- <img src="./Media/home/Susbscribe.png" alt="" class="img-fluid"> -->
+                            <input class="" placeholder="Escribe tu email" type="email" name="subscribe" id="">
+                            <button type="submit" class="btn-subscribe"><img src="./Media/home/Subscribe_btn.png" alt=""
+                                    class="img-fluid"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center arrow">
+                <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!-- section 2  -->
+    <section class="section-2">
+        <div class="relative">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="./Media/home/pc.png" alt="" class="img-fluid w-55">
+            </div>
+            <div class="video d-flex align-items-center justify-content-center">
+                <div class=""><iframe class="sides" src="https://www.youtube.com/embed/bON-KPiiNCk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+                <div class="">
+                    <iframe class="middle" height="" src="https://www.youtube.com/embed/bON-KPiiNCk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class=""><iframe class="sides" src="https://www.youtube.com/embed/bON-KPiiNCk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe></div>
+            </div>
+            <div class="btn-youtube">
+                <a href="#"><img src="./Media/home/botton-youtube.png" alt="" class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- section 3  -->
+    <section class="section-3 relative">
+        <div class="container-flex relative">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="">
+                        <div class="logo">
+                            <img src="./Media/home/logoSec3.png" alt="" class="img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column justify-content-between align-items-center text-center h-80">
+                        <div class="text-top u-fade-type-up js-scroll-trigger">
+                            <h2>ES LA EVOLUCION DEL COMERCIO <br>
+                                ELECTRONICO Y LA WEB TRADICIONAL HACIA</h2>
+                            <h4>LA WEB 3.0 - LA DEsCENTRALIZACION
+                                LOS NFT - LAS CRIPTOMONEDAS
+                                Y LA PRESENCIA COMERCIAL
+                                EN REALIDAD VIRTUAL</h4>
+                        </div>
+                        <div class="text-middle">
+                            <p>Un Multiverso Comercial de cOdigo abierto,
+                                desarrollado en Realidad Virtual y Aumentada
+                                QUE CONECTA El comercio y el multiverso
+                                en un solo lugar.</p>
+                        </div>
+                        <div class="text-bottom u-fade-type-down js-scroll-trigger">
+                            <p>DESCARGA nuestro <br>
+                                whitepaper</p>
+                            <div class="d-flex">
+                                <a href="" class="espanol bg-orange">español</a>
+                                <a href="" class="bg-orange inglis">ingles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+        <div class="girl">
+            <img src="./Media/home/girlVR.png" alt="" class="img-fluid">
+        </div>
+        <div class="man">
+            <img src="./Media/home/manVR.png" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- section 4  -->
+    <section class="section-4 relative">
+        <div class="lights u-fade-type-right js-scroll-trigger">
+            <img src="./Media/home/Iconos.png" alt="">
+        </div>
+        <div class="container-flex">
+            <div class="row so-tablet-mt">
+                <div class="col-lg-7">
+                    <div class="pl-custom u-fade-type-left js-scroll-trigger">
+                        <div class="img">
+                            <img src="./Media/home/logoSec4.png" alt="" class="img-fluid">
+                        </div>
+                        <h2>
+                            EL MULTIVERSO COMERCIAL EN VR / AR
+                        </h2>
+                        <p>
+                            Es un nuevo concepto de Multiverso comercial, un mundo abierto, virtual y descentralizado
+                            conectado
+                            al mundo real. Una
+                            plataforma de intercambio comercial desarrollada en realidad virtual, para comercializar de
+                            forma
+                            interactiva productos
+                            y servicios a través del poder de los NFT y de herramientas que permitirán construir en 3D
+                            su
+                            presencia comercial
+                            inmobiliaria en el multiverso.
+                        </p>
+                        <p>
+                            En “The Mainland” disfrutaran de una experiencia realista con la sensación de estar inmerso
+                            en
+                            él,
+                            donde los usuarios,
+                            empresas, gamers, programadores y emprendedores formaran parte de su construcción en un
+                            nuevo
+                            continente virtual lleno
+                            de nuevas ideas e imaginación, dirigido para comprar, vender, construir, jugar, viajar,
+                            explorar
+                            y
+                            conocer un mundo
+                            futurista sin limitaciones construido para todos y por todos en realidad virtual.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <div data-text="?QUE PUEDo HACER EN THE MAINLAND?"
+                class="d-flex justify-content-center align-items-center heading">
+                <p>?</p>
+                <h3>QUE PUEDo HACER EN THE MAINLAND</h3>
+                <p>?</p>
+            </div>
+            <div class="image relative">
+                <ul class="left">
+                    <li>comprar</li>
+                    <li>vender</li>
+                    <li>alquilar</li>
+                    <li>construir <br>
+                        tu negocio</li>
+                </ul>
+                <img src="./Media/home/lens.png" alt="" class="img-fluid">
+                <ul class="right">
+                    <li>socializar</li>
+                    <li>explorar</li>
+                    <li>crear nft</li>
+                    <li>crear <br>
+                        juegos</li>
+                </ul>
+            </div>
+            <h5>+ todo lo que puedas imaginar...</h5>
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- section 5  -->
+    <section class="section-5">
+        <div class="text-center top u-fade-type-up js-scroll-trigger">
+            <p>TODO EL PODER DE CONSTRUCCION Y GOBERNANZA</p>
+            <h2>CON TU NFT <br> #LANDSMAIN</h2>
+        </div>
+        <div class="w-75 mx-auto relative">
+            <div class="slider ">
+                <div class="slide d-flex align-items-center justify-content-center relative">
+                    <div class="d-flex align-items-center justify-content-center flex-column relative">
+                        <img src="./Media/home/slider/NFT-residencial.png" alt="">
+                        <h5 class="d-none">LandsMain
+                            Empresarial
+                            (RARA)</h5>
+                    </div>
+                    <div class="text d-none">
+                        <p>Permite la construcción para uso comercial (empresas, negocios, ecommerce, salones de
+                            exposiciones, tiendas, juegos,
+                            supermercados, ferreterias, oficina, otros). No hay límites para la creación comercial que
+                            desee
+                            desarrollar. Si su
+                            negocio es virtual, podrá crear su figura física que lo represente para poder atender,
+                            premiar o
+                            socializar con sus
+                            clientes o fans. Este NFT le permite si así lo desea, fragmentar su construcción como nuevas
+                            propiedades inmobiliarias
+                            independientes llamadas NFTs LandsMain...</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Medida m²</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Rareza</div>
+                            <div class="right w-25 text-center">Rara</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Participación y votos</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Permite unir otras NFTs</div>
+                            <div class="right w-25 text-center">Si
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Permite crear NFTs</div>
+                            <div class="number"> 20 Max </div>
+                        </div>
+                        <a href="http://" class="text-center d-block">+ INFORMACIÓN</a>
+                    </div>
+                </div>
+                <div class="slide scale d-flex align-items-center justify-content-center relative">
+                    <div class="d-flex align-items-center justify-content-center flex-column relative">
+                        <img src="./Media/home/slider/NFT-comercial.png" alt="">
+                        <h5 class="d-none">LandsMain
+                            Empresarial
+                            (RARA)</h5>
+                    </div>
+                    <div class="text d-none">
+                        <p>Permite la construcción para uso comercial (empresas, negocios, ecommerce, salones de
+                            exposiciones, tiendas, juegos,
+                            supermercados, ferreterias, oficina, otros). No hay límites para la creación comercial que
+                            desee
+                            desarrollar. Si su
+                            negocio es virtual, podrá crear su figura física que lo represente para poder atender,
+                            premiar o
+                            socializar con sus
+                            clientes o fans. Este NFT le permite si así lo desea, fragmentar su construcción como nuevas
+                            propiedades inmobiliarias
+                            independientes llamadas NFTs LandsMain...</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Medida m²</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Rareza</div>
+                            <div class="right w-25 text-center">Rara</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Participación y votos</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Permite unir otras NFTs</div>
+                            <div class="right w-25 text-center">Si
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Permite crear NFTs</div>
+                            <div class="number"> 20 Max </div>
+                        </div>
+                        <a href="http://" class="text-center d-block">+ INFORMACIÓN</a>
+                    </div>
+                </div>
+                <div class="slide d-flex align-items-center justify-content-center relative">
+                    <div class="d-flex align-items-center justify-content-center flex-column relative">
+                        <img src="./Media/home/slider/NFT-empresarial.png" alt="">
+                        <h5 class="d-none">LandsMain
+                            Empresarial
+                            (RARA)</h5>
+                    </div>
+                    <div class="text d-none">
+                        <p>Permite la construcción para uso comercial (empresas, negocios, ecommerce, salones de
+                            exposiciones, tiendas, juegos,
+                            supermercados, ferreterias, oficina, otros). No hay límites para la creación comercial que
+                            desee
+                            desarrollar. Si su
+                            negocio es virtual, podrá crear su figura física que lo represente para poder atender,
+                            premiar o
+                            socializar con sus
+                            clientes o fans. Este NFT le permite si así lo desea, fragmentar su construcción como nuevas
+                            propiedades inmobiliarias
+                            independientes llamadas NFTs LandsMain...</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Medida m²</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Rareza</div>
+                            <div class="right w-25 text-center">Rara</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Participación y votos</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Permite unir otras NFTs</div>
+                            <div class="right w-25 text-center">Si
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Permite crear NFTs</div>
+                            <div class="number"> 20 Max </div>
+                        </div>
+                        <a href="http://" class="text-center d-block">+ INFORMACIÓN</a>
+                    </div>
+                </div>
+                <div class="slide d-flex align-items-center justify-content-center relative">
+                    <div class="d-flex align-items-center justify-content-center flex-column relative">
+                        <img src="./Media/home/slider/NFT-obras.png" alt="">
+                        <h5 class="d-none">LandsMain
+                            Empresarial
+                            (RARA)</h5>
+                    </div>
+                    <div class="text d-none">
+                        <p>Permite la construcción para uso comercial (empresas, negocios, ecommerce, salones de
+                            exposiciones, tiendas, juegos,
+                            supermercados, ferreterias, oficina, otros). No hay límites para la creación comercial que
+                            desee
+                            desarrollar. Si su
+                            negocio es virtual, podrá crear su figura física que lo represente para poder atender,
+                            premiar o
+                            socializar con sus
+                            clientes o fans. Este NFT le permite si así lo desea, fragmentar su construcción como nuevas
+                            propiedades inmobiliarias
+                            independientes llamadas NFTs LandsMain...</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Medida m²</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Rareza</div>
+                            <div class="right w-25 text-center">Rara</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Participación y votos</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Permite unir otras NFTs</div>
+                            <div class="right w-25 text-center">Si
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Permite crear NFTs</div>
+                            <div class="number"> 20 Max </div>
+                        </div>
+                        <a href="http://" class="text-center d-block">+ INFORMACIÓN</a>
+                    </div>
+                </div>
+                <div class="slide d-flex align-items-center justify-content-center relative">
+                    <div class="d-flex align-items-center justify-content-center flex-column relative">
+                        <img src="./Media/home/slider/NFT-obras.png" alt="">
+                        <h5 class="d-none">LandsMain
+                            Empresarial
+                            (RARA)</h5>
+                    </div>
+                    <div class="text d-none">
+                        <p>Permite la construcción para uso comercial (empresas, negocios, ecommerce, salones de
+                            exposiciones, tiendas, juegos,
+                            supermercados, ferreterias, oficina, otros). No hay límites para la creación comercial que
+                            desee
+                            desarrollar. Si su
+                            negocio es virtual, podrá crear su figura física que lo represente para poder atender,
+                            premiar o
+                            socializar con sus
+                            clientes o fans. Este NFT le permite si así lo desea, fragmentar su construcción como nuevas
+                            propiedades inmobiliarias
+                            independientes llamadas NFTs LandsMain...</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Medida m²</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Rareza</div>
+                            <div class="right w-25 text-center">Rara</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Participación y votos</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Permite unir otras NFTs</div>
+                            <div class="right w-25 text-center">Si
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Permite crear NFTs</div>
+                            <div class="number"> 20 Max </div>
+                        </div>
+                        <a href="http://" class="text-center d-block">+ INFORMACIÓN</a>
+                    </div>
+                </div>
+                <div class="slide d-flex align-items-center justify-content-center relative">
+                    <div class="d-flex align-items-center justify-content-center flex-column relative">
+                        <img src="./Media/home/slider/NFT-city.png" alt="">
+                        <h5 class="d-none">LandsMain
+                            Empresarial
+                            (RARA)</h5>
+                    </div>
+                    <div class="text d-none">
+                        <p>Permite la construcción para uso comercial (empresas, negocios, ecommerce, salones de
+                            exposiciones, tiendas, juegos,
+                            supermercados, ferreterias, oficina, otros). No hay límites para la creación comercial que
+                            desee
+                            desarrollar. Si su
+                            negocio es virtual, podrá crear su figura física que lo represente para poder atender,
+                            premiar o
+                            socializar con sus
+                            clientes o fans. Este NFT le permite si así lo desea, fragmentar su construcción como nuevas
+                            propiedades inmobiliarias
+                            independientes llamadas NFTs LandsMain...</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Medida m²</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Rareza</div>
+                            <div class="right w-25 text-center">Rara</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Participación y votos</div>
+                            <div class="number"> 1,600 </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between simple">
+                            <div class="left w-75">Permite unir otras NFTs</div>
+                            <div class="right w-25 text-center">Si
+                            </div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100">Permite crear NFTs</div>
+                            <div class="number"> 20 Max </div>
+                        </div>
+                        <a href="http://" class="text-center d-block">+ INFORMACIÓN</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="slider-controls">
+                <li class="sec5prev"><img src="./Media/home/slider/left.png" alt="" class="img-fluid"></li>
+                <li class="sec5next"><img src="./Media/home/slider/right.png" alt="" class="img-fluid"></li>
+            </ul>
+        </div>
+
+        <div class="text-center u-fade-type-down js-scroll-trigger container">
+            <p>Los NFT LandsMain son los bienes raíces virtuales en “The Mainland”, solo existirán 6 tipos de NFTs mas
+                uno de
+                gobernanza, serán de utilidad, gobernanza y rentabilidad. No solo representaran la titularidad de su
+                área en el
+                continente virtual sino también los harán participes de los beneficios económicos de la plataforma. Hay
+                un NFT para cada
+                proyecto que desee construir para su negocio o idea.</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- section 6  -->
+    <section class="section-6">
+        <div class="continer-flex">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="pl-custom-left u-fade-type-left js-scroll-trigger">
+                        <div class="img">
+                            <img src="./Media/home/HombreVR.png" alt="" class="img-fluid">
+                        </div>
+                        <p>UN NUEVO MUNDO NECESITA DE <br>
+                            LAS MEJORES Y MAS INNOVADORAS</p>
+                        <h2>HERRAMIENTAS<br>Y PLATAFORMA</h2>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6">
+                    <div class="pl-custom-right u-fade-type-right js-scroll-trigger">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="first d-flex align-items-center justify-content-between flex-column">
+                                <img src="./Media/home/masonary/Main-Tools.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="second d-flex align-items-center justify-content-between flex-column">
+                                <img src="./Media/home/masonary/Main-Marketplace.png" alt="" class="img-fluid">
+                                <img src="./Media/home/masonary/Main-Lauchpads.png" alt="" class="img-fluid">
+                                <img src="./Media/home/masonary/Main-Dex.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="third d-flex align-items-center justify-content-between flex-column">
+                                <img src="./Media/home/masonary/Main-Bots.png" alt="" class="img-fluid">
+                                <img src="./Media/home/masonary/Main-DAOs.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="fourth d-flex align-items-center justify-content-between flex-column">
+                                <img src="./Media/home/masonary/Main-Avatar.png" alt="" class="img-fluid">
+                                <img src="./Media/home/masonary/MainMarketing.png" alt="" class="img-fluid">
+                                <img src="./Media/home/masonary/Fundacion-Mainland.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- section 7  -->
+    <section class="section-7">
+        <div class="text-center u-fade-type-up js-scroll-trigger">
+            <h2>EL MAIN TEAM</h2>
+            <h3>EQUIPO DESARROLLADOR</h3>
+        </div>
+        <div class="people relative">
+            <div class="logo"><img src="./Media/home/logoSec7.png" alt="" class="img-fluid"></div>
+            <div class="animaciones"><img src="./Media/home/Animaciones.png" alt="" class="img-fluid"></div>
+        </div>
+        <div class="relative w-75 mx-auto">
+            <div class="cards d-flex">
+                <div class="slide d-flex align-items-center justify-content-between flex-column">
+                    <div class="img-round"><img src="./Media/home/circle.png" alt="" class="img-fluid"></div>
+                    <div class="text">
+                        <h4>alejandro
+                            valladares</h4>
+                        <p class="designation">ceo</p>
+                    </div>
+                </div>
+                <div class="slide d-flex align-items-center justify-content-between flex-column">
+                    <div class="img-round"><img src="./Media/home/circle.png" alt="" class="img-fluid"></div>
+                    <div class="text">
+                        <h4>alejandro
+                            valladares</h4>
+                        <p class="designation">ceo</p>
+                    </div>
+                </div>
+                <div class="slide d-flex align-items-center justify-content-between flex-column">
+                    <div class="img-round"><img src="./Media/home/circle.png" alt="" class="img-fluid"></div>
+                    <div class="text">
+                        <h4>alejandro
+                            valladares</h4>
+                        <p class="designation">ceo</p>
+                    </div>
+                </div>
+                <div class="slide d-flex align-items-center justify-content-between flex-column">
+                    <div class="img-round"><img src="./Media/home/circle.png" alt="" class="img-fluid"></div>
+                    <div class="text">
+                        <h4>alejandro
+                            valladares</h4>
+                        <p class="designation">ceo</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="slider-controls">
+                <li class="sec7prev"><img src="./Media/home/slider/left.png" alt="" class="img-fluid"></li>
+                <li class="sec7next"><img src="./Media/home/slider/right.png" alt="" class="img-fluid"></li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- section 8  -->
+    <section class="section-8">
+        <div class="row top">
+            <div class="col-lg-6 text-center u-fade-type-left js-scroll-trigger">
+                <p>la MONEDA OFICIAL DE INTERCAMBIO EN THE MAINLAND</p>
+                <h2>TOKEN $MAIN</h2>
+                <p>Es un token deflacionario de utilidad y gobernanza (temporal), se utiliza para comprar, vender,
+                    alquilar, pagar y
+                    subastar en toda la plataforma, para acuñar y comprar NFT, para distribuir recompensas, pagar
+                    tarifas de transacción,
+                    para obtener recompensas a través del staking y la liquidez, para apostar en el Main Launchpad, para
+                    obtener descuentos
+                    y privilegios en todo el Multiverso</p>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-lg-4 text-center u-fade-type-right js-scroll-trigger">
+                <img src="./Media/home/tokens.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row bottom">
+            <div class="col-lg-4 text-center u-fade-type-up js-scroll-trigger "><img src="./Media/home/sec8/coins.png"
+                    alt="" class="img-fluid"></div>
+            <div class="col-lg-4 text-center u-fade-type-up js-scroll-trigger middle"><img
+                    src="./Media/home/sec8/tokenCenter.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-4 text-center u-fade-type-up js-scroll-trigger "><img
+                    src="./Media/home/sec8/PrivateSale.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- section 9  -->
+    <section class="section-9">
+        <div class="text-center u-fade-type-up js-scroll-trigger">
+            <h2>Roadmap</h2>
+        </div>
+        <div class="text-center">
+            <img src="./Media/home/roadmap.png" alt="" class="img-fluid">
+        </div>
+        <div class="d-flex align-items-start justify-content-between bottom">
+            <div class="so-width-left">
+                <p>**Los recursos recaudados en la etapa Crowdfunding del proyecto (preventa token $MAIN y NFT
+                    LandsMain) permitirán al
+                    “Main Team” conformar el equipo de trabajo con más de 50 integrantes, para lograr el desarrollo
+                    continuo sobre la
+                    plataforma durante mas 4 años, sin afectar o depender de la economía de la plataforma.</p>
+            </div>
+            <div class="so-width-right">
+                <p>**Reservado el derecho de cambiar la hoja de ruta por causas de fuerza mayor,</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- section 10  -->
+    <section class="section-10 relative">
+        <div class="row text-center top">
+            <div class="col-lg-3 u-fade-type-left js-scroll-trigger">
+                <img src="./Media/home/logoLeft.png" alt="" class="img-fluid">
+                <div class="text-center left">
+                    <p>Proyecto Inmobiliario, hotelero,
+                        turistico Y vacacional</p>
+                </div>
+            </div>
+            <div class="col-lg-6 middle u-fade-type-up js-scroll-trigger">
+                <p>2 GRANDES PROYECTOS DESARROLLADAS EN THE MANLAND</p>
+                <h2>LAS PRUEBAS PILOTOS</h2>
+                <p>Para nosotros es indispensable que todo sea funcional y justificable. Como saben, cambiar el mundo no
+                    será tarea fácil,
+                    por eso establecimos un robusto Roadmap, con el objetivo de avanzar paso a paso, el cual nos
+                    permitirá realizar el
+                    proyecto en múltiples fases, cada una dando utilidad real a los activos que se irán promocionando en
+                    la fase de
+                    crowdfunding. Eso nos permitirá dar a conocer e incrementar la adopción, crecimiento y desarrollo
+                    del proyecto de manera
+                    natural, sostenible y demostrable. Con este principio nacen 2 grandes alianzas que llevaran a cabo
+                    sus grandes proyectos
+                    en "The Mainland" como las primeras pruebas de conceptualización y desarrollo, <span
+                        class="orange">“Waku Islands”</span> y
+                    <span class="orange">“Mainland Fest”</span>.
+                </p>
+            </div>
+            <div class="col-lg-3 u-fade-type-right js-scroll-trigger">
+                <img src="./Media/home/logoRight.png" alt="" class="img-fluid">
+                <div class="text-center right">
+                    <p>Proyecto de entretenimiento, espectaculo
+                        musical, deportivo y cultural</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center flyer">
+            <img src="./Media/home/Flyer.png" alt="" class="img-fluid">
+        </div>
+        <div class="buttons w-75 mx-auto mt-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center justify-content-around">
+
+                        <a href=""><img src="./Media/home/buttons/Botton WP Waku.png" alt="" class="img-fluid"></a>
+
+                        <a href=""><img src="./Media/home/buttons/Botton WEB Waku.png" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center justify-content-around right">
+                        <a href=""><img src="./Media/home/buttons/Botton WEB Mainland.png" alt="" class="img-fluid"></a>
+                        <a href=""><img src="./Media/home/buttons/Botton WP Mainland.png" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+        <div class="bottom"><img src="./Media/home/rocket.png" alt="" class="img-fluid"></div>
+
+    </section>
+    <!-- section 11  -->
+    <section class="section-11">
+        <div class="text-center u-fade-type-up js-scroll-trigger">
+            <h2>nuestras ultimas noticias</h2>
+        </div>
+        <div class="w-75 top mx-auto relative">
+            <div class="slider1">
+                <div class="slide">
+                    <div class="img"><img src="./Media/home/slider/1.png" alt="" class="img-fluid"></div>
+                    <p>todo listo para la preventa
+                        del token $main</p>
+                </div>
+                <div class="slide">
+                    <div class="img"><img src="./Media/home/slider/2.png" alt="" class="img-fluid"></div>
+                    <p>todo listo para la preventa
+                        del token $main</p>
+                </div>
+                <div class="slide">
+                    <div class="img"><img src="./Media/home/slider/3.png" alt="" class="img-fluid"></div>
+                    <p>todo listo para la preventa
+                        del token $main</p>
+                </div>
+                <div class="slide">
+                    <div class="img"><img src="./Media/home/slider/1.png" alt="" class="img-fluid"></div>
+                    <p>todo listo para la preventa
+                        del token $main</p>
+                </div>
+            </div>
+            <ul class="slider-controls">
+                <li class="prev"><img src="./Media/home/slider/left.png" alt="" class="img-fluid"></li>
+                <li class="next"><img src="./Media/home/slider/right.png" alt="" class="img-fluid"></li>
+            </ul>
+        </div>
+        <div class="row so-mt">
+            <div class="col-lg-4 u-fade-type-left js-scroll-trigger">
+                <p>PARTE DE NUESTRA FAMILIA DE</p>
+                <h3>INVERSORES <br>
+                    & SOCIOS</h3>
+            </div>
+            <div class="col-lg-8 logos">
+                <div class="slider2">
+                    <div class="slide">
+                        <div class="d-flex align-items-center justify-content-around">
+                            <img src="./Media/home/icons/logo waku islands copia.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Bitcoin Hills.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Museo Millennial.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo To The Moon.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Altcoin Paradise.png" alt="" class="">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-around">
+                            <img src="./Media/home/icons/Logo Mainland FEST xxx copia 2.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Waku Tours.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Museo Millennial.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo To The Moon.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Altcoin Paradise.png" alt="" class="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="d-flex align-items-center justify-content-around">
+                            <img src="./Media/home/icons/logo waku islands copia.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Bitcoin Hills.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Museo Millennial.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo To The Moon.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Altcoin Paradise.png" alt="" class="">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-around">
+                            <img src="./Media/home/icons/Logo Mainland FEST xxx copia 2.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Waku Tours.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Museo Millennial.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo To The Moon.png" alt="" class="">
+                            <img src="./Media/home/icons/Logo Altcoin Paradise.png" alt="" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- section 12 -->
+    <section class="section-12">
+        <div class="row">
+            <div class="col-lg-6 left u-fade-type-left js-scroll-trigger">
+                <p class="contacta">contacta</p>
+                <h2>con nosotros</h2>
+                <p>Escríbenos para obtener más información o si tiene alguna duda, ya sea para negocios, asociaciones,
+                    consultas o para
+                    formar parte del "Main Team" y trabajar junto a nosotros.</p>
+                <h3 class="orange">CALL CENTER</h3>
+                <p>Si no encuentra ayuda para su duda a travez de la documentacion en nuestro sitio web, puede utilizar
+                    el servicio
+                    telefonico de atención al cliente global, para obtener la ayuda necesaria, ya sea particular o
+                    empresarial.</p>
+                <div class="phone relative">
+                    <img src="./Media/home/Linea.png" alt="" class="img-fluid">
+                    <a href="tel:0501-6846586" class="orange">0501-MAINLAND (0501-6846586)</a>
+                </div>
+            </div>
+            <div class="col-lg-6 right u-fade-type-right js-scroll-trigger">
+                <form action="">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="radio">
+                            <input type="radio" name="a" id="General">
+                            <label for="General">General</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="a" id="General">
+                            <label for="General">Propuestas y Negocios</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="a" id="General">
+                            <label for="General">Trabajo</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Su Nombre</label>
+                        <input type="text" name="" id="nombre" class="form-control" placeholder="Escriba su nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Su Email</label>
+                        <input type="text" name="" id="email" class="form-control" placeholder="Escriba su email">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Escriba su Comentario</label>
+                        <textarea class="form-control" name="" id="comment" rows="3"
+                            placeholder="Escriba su comentario"></textarea>
+                    </div>
+                    <button type="submit"><img src="./Media/home/form-btn.png" alt="" class="img-fluid"></button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center middle">
+            <p>¡Interactua, comenta, enterate y creemos comunidad!</p>
+            <h3 class="orange">SIGUENOS EN NUESTRAS REDES SOCIALES</h3>
+            <div
+                class="d-flex social align-items-center justify-content-around w-75 mx-auto u-fade-type-up js-scroll-trigger">
+                <a href="#" class="social-icons"><img src="./Media/home/icons/Facebook.png" alt=""
+                        class="img-fluid"></a>
+                <a href="#" class="social-icons down"><img src="./Media/home/icons/YouTube.png" alt=""
+                        class="img-fluid"></a>
+                <a href="#" class="social-icons"><img src="./Media/home/icons/Twitter.png" alt="" class="img-fluid"></a>
+                <a href="#" class="social-icons down"><img src="./Media/home/icons/TikTok.png" alt=""
+                        class="img-fluid"></a>
+                <a href="#" class="social-icons"><img src="./Media/home/icons/IG.png" alt="" class="img-fluid"></a>
+                <a href="#" class="social-icons down"><img src="./Media/home/icons/Twitter.png" alt=""
+                        class="img-fluid"></a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center arrow">
+            <img src="./Media/home/arrow.png" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- footer  -->
+    <footer>
+        <div class="container-fuild footer-bg">
+            <div class="row footer-row px-5 r_px-5-res align-items-center justify-content-around pb-5 w-100">
+                <div class="col-lg-3 r_footer-w50 mx-auto align-middle r_border-right">
+                    <div class="footer-logo text-center">
+                        <img class="footer-img" src="./Media/Logo completo.png" alt="">
+                        <p class="text-center r_pstyle mt-2">conectando El comercio<br>
+                            y el multiverso en un solo lugar</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto r_border-right align-middle">
+                    <ul class="footer-menu m-2">
+                        <li><a href="">la plataforma</a></li>
+                        <li><a href="">marketplace</a></li>
+                        <li><a href="">maindao</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">main launchpad</a></li>
+                        <li><a href="">main dex</a></li>
+                        <li><a href="">main bots ia</a></li>
+                        <li><a href="">main avatar</a></li>
+                        <li><a href="">main marketing</a></li>
+                        <li><a href="">Contactanos</a></li>
+                        <li><a href="">nft landsmain</a></li>
+                        <li><a href="">token $main</a></li>
+                        <li><a href="">construir tu negocio</a></li>
+                        <li><a href="">fundacion mainland</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto r_border-right align-middle">
+                    <ul class="footer-menu m-2">
+                        <li><a href="">Ayuda / FAQ</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                        <li><a href="">descargo de responsabilidad</a></li>
+                        <li><a href="">guia / documentacion</a></li>
+                        <li><a href="">sdk / mcms</a></li>
+                        <li><a href="">auditorias</a></li>
+                        <li><a href="">programadores / desarrolladores</a></li>
+                        <li><a href="">trabaja con nosotros</a></li>
+                        <li><a href="">programa de recompensas</a></li>
+                        <li><a href="">bug bountry</a></li>
+                        <li><a href="">team main</a></li>
+                        <li><a href="">whitepaper</a></li>
+                        <li><a href="">roadmap</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 r_footer-w50 mx-auto align-middle">
+                    <img class="footer-social-img" src="./Media/Redes sociales.png" alt="">
+                    <form action="">
+                        <div class="form-group text-center align-items-center justify-content-around">
+                            <input type="email" class="form-control r_field mt-5" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Escribe tu email">
+                            <button type="submit" class="btn r_subs-btn-footer mt-2">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-bg">
+            <div class="copyright-row align-self-center text-center">
+                <p class="mb-0">© 2021 <b>The Mainland – All Rights Reserved by the MainDAO<b></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3bc0c44d7a.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- custom js  -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
