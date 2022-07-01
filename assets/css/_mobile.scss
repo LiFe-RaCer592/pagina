@@ -1,4 +1,19 @@
 @media (max-width: 430px) {
+	footer {
+		.r_footer-w50 {
+			width: 100% !important;
+		}
+		.footer-bg {
+			padding: 3rem 0px !important;
+		}
+		.r_px-5-res {
+			padding: 0px !important;
+		}
+		.footer-menu {
+			padding: unset !important;
+		}
+	}
+
 	$paddingMobile: 30px;
 	// * {
 	// 	border: 1px solid red;

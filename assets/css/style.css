@@ -25,6 +25,123 @@ body {
   position: relative;
 }
 
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#072749), to(#01162c));
+  background-image: linear-gradient(#072749, #01162c);
+  width: 100%;
+  font-family: 'enixe';
+  font-size: 18px;
+  font-weight: 500;
+  color: #9a999e;
+  position: relative;
+  z-index: 99;
+}
+
+header .logo {
+  background-image: url("../../Media/Compressed Media/ietras-logo.webp");
+  width: 200px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header .conectar-btn {
+  padding: 05px 25px;
+  background-image: url("../../Media/Compressed Media/CONECTAR.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 28px;
+  color: #9a999e;
+}
+
+header .conectar-btn a {
+  color: #01162c;
+}
+
+header .navbar-nav li a {
+  color: #9a999e;
+}
+
+header .navbar-toggler-icon {
+  color: #9a999e;
+  font-size: 26px;
+}
+
+footer .footer-bg {
+  background-image: url("../../Media/fondo1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+footer .footer-img {
+  width: 70%;
+}
+
+footer .r_pstyle {
+  color: #fff;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+footer .r_border-right {
+  border-right: 4px solid #5c6979;
+}
+
+footer .footer-menu {
+  list-style: none;
+}
+
+footer .footer-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer .footer-row {
+  display: table;
+}
+
+footer .footer-row [class*='col-'] {
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+}
+
+footer .footer-social-img {
+  width: 100%;
+}
+
+footer .r_subs-btn-footer {
+  background-image: url("../../Media/Subscribe 2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 75px;
+  color: #00000000;
+}
+
+footer .r_subs-btn-footer:hover {
+  color: #00000000;
+}
+
+footer .copyright-bg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#08284a), to(#01172d));
+  background-image: linear-gradient(#08284a, #01172d);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: 4px solid #f36500;
+}
+
+footer .copyright-row {
+  padding: 3px;
+  color: #fff;
+}
+
 .section-1 {
   background-image: url("../../Media/home/bg.png");
   background-repeat: no-repeat;
@@ -73,6 +190,7 @@ body {
   height: 595px;
   background-size: contain;
   background-repeat: no-repeat;
+  left: 0 !important;
 }
 
 .section-1 .relative .inner {
@@ -1322,6 +1440,33 @@ body {
 }
 
 @media (max-width: 780px) {
+  header .navbar-nav li a {
+    font-size: 14px !important;
+  }
+  header .menu-icons svg image {
+    width: 50%;
+  }
+  header .menu-icons svg {
+    margin: 0 auto !important;
+  }
+  header ul.navbar-nav.m-auto {
+    text-align: center;
+  }
+  footer .r_border-right {
+    border: none !important;
+    font-size: 14px;
+  }
+  footer .footer-bg {
+    padding: 1.5rem;
+  }
+  footer .footer-row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  footer .r_footer-w50 {
+    width: 50% !important;
+  }
   .section-1 .text-left h1 {
     margin: 0 auto;
     font-size: 40px;
@@ -1464,6 +1609,18 @@ body {
 }
 
 @media (max-width: 430px) {
+  footer .r_footer-w50 {
+    width: 100% !important;
+  }
+  footer .footer-bg {
+    padding: 3rem 0px !important;
+  }
+  footer .r_px-5-res {
+    padding: 0px !important;
+  }
+  footer .footer-menu {
+    padding: unset !important;
+  }
   .section-1 .text-left {
     margin-top: -55px;
   }

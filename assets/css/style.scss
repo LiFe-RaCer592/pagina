@@ -31,6 +31,8 @@ $textGradientOnly: linear-gradient(
 	font-family: GrandWilson;
 	src: url(../fonts/Grand_wilson.otf);
 }
+
+@import 'animations';
 html {
 	overflow-x: hidden;
 	width: 100%;
@@ -45,7 +47,107 @@ body {
 .relative {
 	position: relative;
 }
+header {
+	background-image: linear-gradient(#072749, #01162c);
+	width: 100%;
+	font-family: 'enixe';
+	font-size: 18px;
+	font-weight: 500;
+	color: #9a999e;
+	position: relative;
+	z-index: 99;
 
+	.logo {
+		background-image: url('../../Media/Compressed\ Media/ietras-logo.webp');
+		width: 200px;
+		height: 50px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	.conectar-btn {
+		padding: 05px 25px;
+		background-image: url('../../Media/Compressed\ Media/CONECTAR.webp');
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 28px;
+		color: #9a999e;
+	}
+	.conectar-btn a {
+		color: #01162c;
+	}
+
+	.navbar-nav li a {
+		color: #9a999e;
+	}
+	.navbar-toggler-icon {
+		color: #9a999e;
+		font-size: 26px;
+	}
+}
+footer {
+	.footer-bg {
+		background-image: url('../../Media/fondo1.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+	.footer-img {
+		width: 70%;
+	}
+	.r_pstyle {
+		color: #fff;
+		font-weight: bold;
+		line-height: 16px;
+	}
+	.r_border-right {
+		border-right: 4px solid #5c6979;
+	}
+	.footer-menu {
+		list-style: none;
+	}
+	.footer-menu li a {
+		text-decoration: none;
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.footer-row {
+		display: table;
+	}
+	.footer-row [class*='col-'] {
+		float: none;
+		display: table-cell;
+		vertical-align: top;
+	}
+	.footer-social-img {
+		width: 100%;
+	}
+
+	.r_subs-btn-footer {
+		background-image: url('../../Media/Subscribe\ 2.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 10px 75px;
+		color: #00000000;
+	}
+	.r_subs-btn-footer:hover {
+		color: #00000000;
+	}
+	.copyright-bg {
+		background-image: linear-gradient(#08284a, #01172d);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		border-top: 4px solid #f36500;
+	}
+	.copyright-row {
+		padding: 3px;
+		color: #fff;
+	}
+}
 .section-1 {
 	background-image: url('../../Media/home/bg.png');
 	background-repeat: no-repeat;
@@ -86,6 +188,7 @@ body {
 		height: 595px;
 		background-size: contain;
 		background-repeat: no-repeat;
+		left: 0 !important;
 		.inner {
 			width: 60%;
 			transform: translate(30%, -45%);

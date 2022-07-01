@@ -171,6 +171,35 @@
 	}
 }
 @media (max-width: 780px) {
+	header {
+		.navbar-nav li a {
+			font-size: 14px !important;
+		}
+		.menu-icons svg image {
+			width: 50%;
+		}
+		.menu-icons svg {
+			margin: 0 auto !important;
+		}
+		ul.navbar-nav.m-auto {
+			text-align: center;
+		}
+	}
+	footer {
+		.r_border-right {
+			border: none !important;
+			font-size: 14px;
+		}
+		.footer-bg {
+			padding: 1.5rem;
+		}
+		.footer-row {
+			display: flex !important;
+		}
+		.r_footer-w50 {
+			width: 50% !important;
+		}
+	}
 	.section-1 {
 		.text-left {
 			h1 {

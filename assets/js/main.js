@@ -1,4 +1,5 @@
 $(function () {
+	$('.section-1').find('.relative').animate({ left: '250px' });
 	$('.arrow').click(function (e) {
 		e.preventDefault();
 		window.scrollTo({ top: 0, behavior: 'smooth' });
